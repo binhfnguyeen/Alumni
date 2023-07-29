@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/Trang chủ/trang chu.css"/>
+    <link rel="stylesheet" href="/Trang chủ/search.css"/>
+    <script src="/Trang chủ/search.js"></script> 
+    <title>Allumni</title>
+</head>
+<body id ="body" onclick="closeall()">
+
+    <div class ="app">
+        <header>
+            <selection class="logo"><a href="#"><img src="/image/3.png" alt="logo"/></a></selection>
+            <selection>
+                <form class="search-form" action="/tim-kiem" method="get" id="search-box">
+                    <button type = "button" class="search-btn" onclick="focusInput()"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <input class ="search-text" type="text" placeholder="tìm kiếm trên Allumni" >
+                </form>
+            </selection>
+            <selection class = "choice">
+                <button type="button" onclick="openmenuheader()" class = "button-menu"><i class="fa-solid fa-chevron-up"></i></button>
+                    <ul class="menu-header">
+                        <li>
+                            <button type="button" onclick="" class = ""><a href="#"><i class="fa-regular fa-user"></i><i class="fa-solid fa-chevron-right"></i><span>Tôi</span></a></button>
+                            
+                        </li>
+                        <li>
+                            <button type="button" onclick="" class = ""><a href="#"><i class=" fa-solid fa-pen-to-square"></i><i class="fa-solid fa-chevron-right"></i><span>Đổi mặt khẩu</span></a></button>
+                            
+                        </li>
+                        <li>
+                            <button type="button" onclick="" class = ""><a href ="#"><i class=" fa-solid fa-arrow-right-from-bracket"></i><i class="fa-solid fa-chevron-right"></i><span>Đăng xuất</span></a></button>
+                            
+                        </li>
+                    </ul>
+            
+            </selection>
+        </header>
+        <main>
+            <div class ="sst">
+
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
