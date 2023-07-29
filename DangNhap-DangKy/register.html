@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="/DangNhap-DangKy/style.css">
+    <link rel="shortcut icon" href="/DangNhap-DangKy/img/logo.png">
+</head>
+<body>
+    <nav>
+        <h1>Welcome to Allumni, tận hưởng những giây phút tuyệt vời!!</h1>
+    </nav>
+    <section class="register">
+        <div class="hder">
+            <h1>ĐĂNG KÝ</h1>
+            <span>Vui lòng điền thông tin để đăng ký</span>
+        </div>
+        <form onsubmit="return validateForm()">
+            <div class="bdy">
+                <div class="row">
+                    <label for="username" >Tên đăng nhập: </label>
+                    <input type="text" placeholder="Username" id="username" required>
+                </div>
+                <div class="row">
+                    <label for="password">Mật khẩu: </label>
+                    <input type="password" placeholder="Nhập mật khẩu" id="password" required>
+                </div>
+                <div class="row">
+                    <label for="password-repeat">Nhập lại mật khẩu: </label>
+                    <input type="password" placeholder="Nhập lại mật khẩu" id="password-repeat" required>
+                </div>
+            </div>
+            <div class="dk">
+                <p>Để tạo tài khoản vui lòng đồng ý với điều khoản của chúng tôi <a href="https://policies.google.com/" target="_blank">Terms & Privacy</a>.</p>
+                <button type="submit" class="submit" onsubmit="validateForm()" >Đăng ký</button>
+            </div>
+        </form>
+        <div class="login">
+            <p>Bạn đã có tài khoản rồi? <a href="http://127.0.0.1:5500/HTML/BigProject/login.html">Đăng nhập</a>.</p>
+        </div>
+    </section>
+    <script src="/DangNhap-DangKy/kiemtra.js"></script>
+</body>
+</html>
