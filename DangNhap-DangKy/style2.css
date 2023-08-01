@@ -20,7 +20,7 @@ section.login {
     margin: 0 auto;
     width: 500px;
     padding: 20px;
-    background-image: url(/HTML/img/sky-clouds-vintage-painting.jpg);
+    background-color: lightgray;
     background-size: cover;
     position: relative;
     top: 5rem;
