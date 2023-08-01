@@ -6,44 +6,131 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="/Cựu SV/Trang chủ/trang chu.css"/>
     <link rel="stylesheet" href="/Cựu SV/Trang chủ/search.css"/>
-    <script src="/Cựu SV/image/3.png"></script> 
+    <script src="/Cựu SV/Trang chủ/search.js"></script> 
     <title>Allumni</title>
 </head>
-<body id ="body" onclick="closeall()">
-    <div class ="app">
-        <header>
-            <selection class="logo"><a href="#"><img src="/image/3.png" alt="logo"/></a></selection>
-            <selection>
-                <form class="search-form" action="/tim-kiem" method="get" id="search-box">
-                    <button type = "button" class="search-btn" onclick="focusInput()"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    <input class ="search-text" type="text" placeholder="tìm kiếm trên Allumni" >
-                </form>
-            </selection>
-            <selection class = "choice">
-                <button type="button" onclick="openmenuheader()" class = "button-menu"><i class="fa-solid fa-chevron-up"></i></button>
-                    <ul class="menu-header">
-                        <li>
-                            <button type="button" onclick="" class = ""><a href="#"><i class="fa-regular fa-user"></i><i class="fa-solid fa-chevron-right"></i><span>Tôi</span></a></button>
-                            
-                        </li>
-                        <li>
-                            <button type="button" onclick="" class = ""><a href="#"><i class=" fa-solid fa-pen-to-square"></i><i class="fa-solid fa-chevron-right"></i><span>Đổi mặt khẩu</span></a></button>
-                            
-                        </li>
-                        <li>
-                            <button type="button" onclick="" class = ""><a href ="#"><i class=" fa-solid fa-arrow-right-from-bracket"></i><i class="fa-solid fa-chevron-right"></i><span>Đăng xuất</span></a></button>
-                            
-                        </li>
-                    </ul>
-            
-            </selection>
-        </header>
-        <main>
-            <div class ="sst">
 
+<section class = "header">
+    <section class="logo"><a href="#"><img src="/Cựu SV/image/3.png" alt="logo"/></a></section>
+    <section>
+        <form class="search-form" action="/tim-kiem" method="get" id="search-box">
+            <button type = "button" class="search-btn" onclick="focusInput()"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <input class ="search-text" type="text" placeholder="tìm kiếm trên Allumni" >
+        </form>
+    </section>
+    <section class = "choice">
+        <button type="button" onclick="openmenuheader()" class = "button-menu"><i class="fa-solid fa-chevron-up"></i><i class="fa-solid fa-chevron-down"></i></button>
+            <ul class="menu-header">
+                <li>
+                    <button type="button" onclick="" class = ""><a href="#"><i class="fa-regular fa-user"></i><i class="fa-solid fa-chevron-right"></i><span>Tôi</span></a></button>
+                </li>
+                <li>
+                    <button type="button" onclick="" class = ""><a href="#"><i class=" fa-solid fa-pen-to-square"></i><i class="fa-solid fa-chevron-right"></i><span>Đổi mặt khẩu</span></a></button>
+                </li>
+                <li>
+                    <button type="button" onclick="" class = ""><a href ="#"><i class=" fa-solid fa-arrow-right-from-bracket"></i><i class="fa-solid fa-chevron-right"></i><span>Đăng xuất</span></a></button>
+                </li>
+            </ul>
+    </section>
+</section>
+
+<div class= "content">
+    <div class="post-container" >
+        <div class="post">
+            <div class = "user">
+                <div class = "user-avt"><img src="/Cựu SV/Trang chủ/lover.jpg"></div>
+                <div class = "user-name"><span>Trí Minh</span></div>
             </div>
-        </main>
+            <div class = "post-form">
+                <textarea id="post-content" placeholder="Nhập nội dung bài viết..."></textarea>
+                <button id="post-btn" onclick="addPost()">Đăng bài</button>
+            </div>
+        </div>
+            <!-- Hiển thị các bài đăng ở đây -->
+        <div class ="post">
+        <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                                <li></li>
+                <li></li>
+                <li></li>
+                                <li></li>
+                <li></li>
+                <li></li>
+                                <li></li>
+                <li></li>
+                <li></li>
+        </ul>
+        </div>
+        <div class ="post">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class ="post">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+                      <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>          <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>          <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class ="post">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class ="post">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class ="post">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class ="post">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class ="post">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
     </div>
+    
+
+</div>
+<body id ="body" onclick="closeall()">
 
 </body>
+
 </html>
