@@ -1,0 +1,444 @@
+body {
+    margin: 0;
+    background-color: rgb(192, 192, 192, 0.1);
+    padding-bottom: 3000px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+textarea {
+    font-size: medium;
+    font-family: "Arial", sans-serif;
+}
+
+/* a {
+    text-decoration: none;
+    color: rgb(1, 0, 0);
+} */
+
+.header {
+    display: flex;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 92px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 1px 1px 5px rgb(140, 138, 138, 0.5);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    z-index: 999;
+}
+
+/* search */
+
+form.search-form{
+    background-color: rgb(192, 192, 192, 0.2);
+    border-radius: 20px;
+}
+
+form.search-form input.search-text{
+    padding: 10px 15px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    background-color: rgb(192, 192, 192, 0);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: all 0.25s ease-in-out;
+}
+form.search-form button.search-btn{
+    background-color: rgb(192, 192, 192, 0);
+    border-radius: 50%;
+    border: 0;
+    outline: none ;
+    padding: 10px 12px;
+    cursor: pointer;
+}
+
+form.search-form:hover {
+    background-color: rgb(192, 192, 192, 0.4);
+}
+
+/* @media screen and (max-width: 700px) {
+    .search-form {
+        justify-content: center;
+    }
+    .search-text {
+        display: none;
+    }
+    .search-btn {
+        display: block;
+    }
+} */
+
+/* menu nho goc tren ben phai */
+section .button-menu {
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    position: relative;
+    right: 10px;
+    padding: 10px 12px;
+    border-radius: 50%;
+}
+
+i.fa-solid.fa-chevron-up{
+    position: absolute;
+    display: none;
+}
+
+i.fa-solid.fa-chevron-down{
+    display: block;
+}
+
+.flipped {
+    transform: rotate(180deg);
+}
+
+
+section.choice .menu-header{
+    list-style: none;
+    padding: 30px; 
+    position: absolute;
+    right: 10px;
+    background-color: white;
+    box-shadow: 1px 1px 5px rgb(140, 138, 138, 0.5);
+    border-radius: 10px;
+    display: none;
+    width: 200px;
+}
+
+section.choice .menu-header > li {
+    width: 200px;
+    border-radius: 10px;
+    top: 20px;
+    position: relative;
+}
+
+section.choice .menu-header > li button{
+    background-color: rgb(255, 255, 255, 0);
+    border: 0;
+    position: relative;
+    font-weight: bold;
+    padding: 0;
+    right: 23px;
+    top: -25px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+section.choice .menu-header > li i:first-child {
+    border: 0;
+    outline: none;
+    position: relative;
+    right: 10px;
+    padding: 12px 12px;
+    border-radius: 50%;
+    background-color: rgb(192, 192, 192, 0.4);
+}
+
+i.fa-solid.fa-chevron-right {
+    position: relative;
+    right: -155px;
+    font-size: 16px;
+}
+
+section.choice .menu-header > li:first-child i:first-child{
+    padding: 12.5px 13.5px;
+}
+
+section.choice .menu-header > li :hover {
+    background-color: rgb(192, 192, 192, 0.3);
+    color: #000;
+}
+
+section.choice .menu-header > li a {
+    text-decoration: none;
+    padding: 5px 25px;
+    display: block;
+    text-align: justify;
+    border-radius: 10px;
+    color: #000;
+}
+
+
+/* //main content// */
+.content {
+    top: 112px;
+    position: relative;
+}
+
+.post-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* post */
+.post {
+    background-color: white;
+    margin: 0 auto 20px auto;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 578px;
+    box-shadow: 1px 1px 5px rgb(140, 138, 138, 0.5);
+    transition: box-shadow 0.3s ease;
+}
+
+
+.post-value {
+        max-height: 300px;
+        overflow: auto;
+        margin: 5px 0 10px 0;
+}
+
+.interact-val{
+    border-top: 1px solid rgb(140, 138, 138, 0.5);
+    display: flex;
+    justify-content: space-between;
+}
+
+.interact-val > div {
+    padding: 7px;
+    margin: 0 3px;
+    font-size: small;
+    font-weight: 400;
+    color: rgb(140, 138, 138, 1);
+}
+/* right */
+.colum-right {
+    width: 17%;
+    position: fixed;
+    left: 0px;
+}
+.user-profile {
+    list-style-type: none;
+    text-decoration: none;
+    padding: 0;
+}
+.user-profile .user-avt img{
+    width: 20px;
+    height: 20px;
+}
+
+button#btn-profile {
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    width: 200px;
+    border-radius: 8px;
+}
+
+button#btn-profile:hover{
+    background-color: rgb(192, 192, 192, 0.3);
+}
+
+.user-avt > i {
+    padding: 3.5px 10px 3.5px 0px;
+    font-size: 17px;
+}
+/* left */
+.colum-left {
+    width: 25%;
+    position: fixed;
+    right: 0px;
+}
+
+.colum-left > div:first-child{
+    font-family: system-ui;
+    font-size: large;
+    font-weight: 400px;
+    margin-bottom: 20px;
+}
+
+.adds-container{
+    overflow: auto;
+    height: 592px;
+    width: 380px;
+}
+
+.adds-container .adds a:hover{
+    background-color: rgb(192, 192, 192, 0.3);
+    color: rgb(98, 97, 97);
+}
+
+.adds-container .adds a:visited {
+    color: none;
+}
+
+.adds-container .adds a {
+    display: block;
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    font-size: smaller;
+    line-height: 1.5;
+    text-decoration: none;
+    color: rgb(0 0 0 60%);
+    font-weight: 550;
+}
+
+.adds-container .adds a > span{
+    width: 100%;
+    padding:10px;
+    color: rgb(0, 0, 0,0.5);
+}
+
+
+.adds {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.img-add {
+    width: 30%;
+    border-radius: 10px;
+}
+
+
+
+@media screen and (max-width: 1095.4px) {
+    .colum-right {
+        display: none;
+    }
+    .colum-left {
+        display: none;
+    }
+}
+/* edit avt + teen */
+
+.user{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    font-weight: 550;
+}
+
+.user-avt img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+
+.post-time {
+    font-size: 12px;
+    font-weight: 550;
+    color: rgb(0, 0, 0, 0.5);
+}
+
+.post-form{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+textarea#post-content { 
+    width: 99%;
+    height: 70px;
+    border: none;
+    padding: 20px 0 20px 0;
+    outline: none;
+    resize: none;
+    margin: 0 10px 15px 10px;
+}
+
+button#post-btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 11px;
+    border-radius: 9px;
+    background: rgb(135, 206, 250);
+    font-size: 15px;
+    opacity: 1;
+}
+
+button#post-btn:hover {
+    opacity: 0.8;
+}
+
+.btn-interact {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn-interact > button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    width: 50%;
+    border-radius: 200px;
+    opacity: 1;
+}
+
+.btn-interact > button span {
+    padding-left: 5px;
+}
+
+.btn-interact > button:hover{
+    opacity: 0.8;
+}
+
+.btn-interact-active {
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.2);;
+    margin-bottom: 10px;
+}
+
+/* commnet + like */
+.fa-solid.fa-heart{
+    color: red;
+}
+
+/* commet */
+.cmt-container {
+    padding: 7px;
+    font-size: 13.5px;
+    display: none;
+}
+
+.comment {
+
+    display: flex;
+    background-color: rgb(0 0 0 60%);
+    margin-bottom: 20px;
+}
+
+.cmt-info {
+    background-color: rgb(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.cmt-info .btn-cmt-like {
+    outline: none;
+    position: absolute;
+    right: 0;
+    padding: 3px 3px 0px 3px;
+    border-radius: 46%;
+    border: 0.5px solid rgb(0, 0, 0, 0.1);
+    background: white;
+    cursor: pointer;
+}
+
+.cmt-name span {
+    cursor: pointer;
+    padding-bottom: 5px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}

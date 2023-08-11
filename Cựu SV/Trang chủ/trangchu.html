@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="/Cựu SV/Trang chủ/trang chu.css"/>
+    <link rel="stylesheet" href="/Cựu SV/Trang chủ/trangchu.css"/>
     <link rel="stylesheet" href="/Cựu SV/Trang chủ/search.css"/>
     <script src="/Cựu SV/Trang chủ/search.js"></script> 
     <title>Allumni</title>
@@ -19,10 +19,10 @@
         </form>
     </section>
     <section class = "choice">
-        <button type="button" onclick="openmenuheader()" class = "button-menu"><i class="fa-solid fa-chevron-up"></i><i class="fa-solid fa-chevron-down"></i></button>
+        <button  onclick="openmenuheader();toggleArrow();" class = "button-menu"><i id="chevron" class="fa-solid fa-chevron-down"></i></button>
             <ul class="menu-header">
                 <li>
-                    <button type="button" onclick="" class = ""><a href="#"><i class="fa-regular fa-user"></i><i class="fa-solid fa-chevron-right"></i><span>Tôi</span></a></button>
+                    <button type="button" onclick="" class = ""><a href="#"><i class="fa-solid fa-user"></i><i class="fa-solid fa-chevron-right"></i><span>Tôi</span></a></button>
                 </li>
                 <li>
                     <button type="button" onclick="" class = ""><a href="#"><i class=" fa-solid fa-pen-to-square"></i><i class="fa-solid fa-chevron-right"></i><span>Đổi mặt khẩu</span></a></button>
@@ -35,6 +35,78 @@
 </section>
 
 <div class= "content">
+    <div class ="colum-right">
+        <ul class="user-profile">
+            <li>
+                <button type="button" id="btn-profile">
+                    <div class = "user">
+                        <div class = "user-avt"><img src="/Cựu SV/Trang chủ/lover.jpg"></div>
+                        <div class = "user-name"><span>Trí Minh</span></div>
+                    </div>
+                </button>
+            </li>
+            <li>
+                <button type="button" id="btn-profile">
+                    <div class = "user">
+                        <div class = "user-avt"><i class="fa-solid fa-house"></i></div>
+                        <div class = "user-name"><span>Trang chủ</span></div>
+                    </div>
+                </button>
+            </li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <div class = "colum-left">
+        <div>Cổng thông tin  </div>
+        <div class ="adds-container">
+            <div class ="adds">
+                <a href="#" >
+                    <span>ĐIỂM TIN THÁNG 7/2023 TRƯỜNG ĐẠI HỌC MỞ TP.HCM</span>
+                    <img class ="img-add" src="/Cựu SV/image/1.png"> 
+                </a>
+            </div>
+            <div class ="adds">
+                <a href="#" >
+                    <span>ĐIỂM TIN THÁNG 7/2023 TRƯỜNG ĐẠI HỌC MỞ TP.HCM</span>
+                    <img class ="img-add" src="/Cựu SV/image/1.png"> 
+                </a>
+            </div>
+            <div class ="adds">
+                <a href="#" >
+                    <span>ĐIỂM TIN THÁNG 7/2023 TRƯỜNG ĐẠI HỌC MỞ TP.HCM</span>
+                    <img class ="img-add" src="/Cựu SV/image/1.png"> 
+                </a>
+            </div>
+            <div class ="adds">
+                <a href="#" >
+                    <span>ĐIỂM TIN THÁNG 7/2023 TRƯỜNG ĐẠI HỌC MỞ TP.HCM</span>
+                    <img class ="img-add" src="/Cựu SV/image/1.png"> 
+                </a>
+            </div>
+            <div class ="adds">
+                <a href="#" >
+                    <span>ĐIỂM TIN THÁNG 7/2023 TRƯỜNG ĐẠI HỌC MỞ TP.HCM</span>
+                    <img class ="img-add" src="/Cựu SV/image/1.png"> 
+                </a>
+            </div>
+            <div class ="adds">
+                <a href="#" >
+                    <span>ĐIỂM TIN THÁNG 7/2023 TRƯỜNG ĐẠI HỌC MỞ TP.HCM</span>
+                    <img class ="img-add" src="/Cựu SV/image/1.png"> 
+                </a>
+            </div>
+            <div class ="adds">
+                <a href="#" >
+                    <span>ĐIỂM TIN THÁNG 7/2023 TRƯỜNG ĐẠI HỌC MỞ TP.HCM</span>
+                    <img class ="img-add" src="/Cựu SV/image/1.png"> 
+                </a>
+            </div>
+            
+        </div>
+    </div>
+    
+
     <div class="post-container" >
         <div class="post">
             <div class = "user">
@@ -46,84 +118,304 @@
                 <button id="post-btn" onclick="addPost()">Đăng bài</button>
             </div>
         </div>
+
             <!-- Hiển thị các bài đăng ở đây -->
         <div class ="post">
-        <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                                <li></li>
-                <li></li>
-                <li></li>
-                                <li></li>
-                <li></li>
-                <li></li>
-                                <li></li>
-                <li></li>
-                <li></li>
-        </ul>
+            <div class = "user">
+                <div class = "user-avt"><img src="/Cựu SV/Trang chủ/lover.jpg" alt="adds"></div>
+                <div class = "name-time">
+                    <div class = "user-name"><span>Trí Minh</span></div>
+                    <div class= " post-time"><span>2h</span></div>
+                </div>
+            </div>
+            
+            <div class ="post-value">
+                <p class = "paragrap-post"> 
+                    This love is good
+
+                    This love is bad
+
+                    This love is alive
+
+                    Back from the dead
+
+                    These hands had to let it go free and
+
+                    This love came back to me
+                    
+
+                    This love left a permanent mark
+
+                    This love is glowing in the dark
+
+                    These hands had to let it go free and
+
+                    This love came back to me
+                    This love is good
+
+                    This love is bad
+
+                    This love is alive
+
+                    Back from the dead
+
+                    These hands had to let it go free and
+
+                    This love came back to me
+                    
+
+                    This love left a permanent mark
+
+                    This love is glowing in the dark
+
+                    These hands had to let it go free and
+                    
+                    This love came back to me
+                    This love is good
+
+                    This love is bad
+
+                    This love is alive
+
+                    Back from the dead
+
+                    These hands had to let it go free and
+
+                    This love came back to me
+                    
+
+                    This love left a permanent mark
+
+                    This love is glowing in the dark
+
+                    These hands had to let it go free and
+                    
+                    This love came back to me
+                    This love is good
+
+                    This love is bad
+
+                    This love is alive
+
+                    Back from the dead
+
+                    These hands had to let it go free and
+
+                    This love came back to me
+                    
+
+                    This love left a permanent mark
+
+                    This love is glowing in the dark
+
+                    These hands had to let it go free and
+                    
+                    This love came back to me
+                    This love is good
+
+                    This love is bad
+
+                    This love is alive
+
+                    Back from the dead
+
+                    These hands had to let it go free and
+
+                    This love came back to me
+                    
+
+                    This love left a permanent mark
+
+                    This love is glowing in the dark
+
+                    These hands had to let it go free and
+                    
+                    This love came back to me
+
+                    This love is good
+
+                    This love is bad
+
+                    This love is alive
+
+                    Back from the dead
+
+                    These hands had to let it go free and
+
+                    This love came back to me
+                    
+
+                    This love left a permanent mark
+
+                    This love is glowing in the dark
+
+                    These hands had to let it go free and
+                    
+                    This love came back to me
+                    This love is good
+
+                    This love is bad
+
+                    This love is alive
+
+                    Back from the dead
+
+                    These hands had to let it go free and
+
+                    This love came back to me
+                    
+
+                    This love left a permanent mark
+
+                    This love is glowing in the dark
+
+                    These hands had to let it go free and
+                    
+                    This love came back to me
+                    This love is good
+
+                    This love is bad
+
+                    This love is alive
+
+                    Back from the dead
+
+                    These hands had to let it go free and
+
+                    This love came back to me
+                    
+
+                    This love left a permanent mark
+
+                    This love is glowing in the dark
+
+                    These hands had to let it go free and
+                    
+                    This love came back to me
+                </p>
+                <!-- <img class="img-post" src="" alt=""> -->
+            </div>
+
+            <div class ="interact-val">
+                <div>45 thích</div> 
+                <div>5 bình luận</div>
+            </div>
+
+            <div class= "btn-interact">
+                <button type="button" class="btn-like"><i class="fa-regular fa-heart"></i><span>Yêu thích</span></button>
+                <button type="button" class ="btn-comment"><i class="fa-regular fa-comment"></i><span>Bình luận</span></button>
+            </div>
+
+            <div class ="cmt-container">
+                <div class="comment">
+                    <div class = "user-avt"><img src="/Cựu SV/Trang chủ/lover.jpg" alt="adds"></div>
+                    <div class = "cmt-info">
+                            <div class = "cmt-name"><span>Trí Minh</span></div>   
+                            <div class="cmt-value">
+                                One of the main attractions of Vũng Tàu is its picturesque coastline, with long stretches of sandy beaches bathed in warm tropical sunlight. Visitors can bask in the sun, take a refreshing dip in the clear blue waters, or engage in various water sports such as swimming, surfing, and jet skiing. The most well-known beaches in Vũng Tàu include Back Beach (Bãi Trước) and Front Beach (Bãi Sau), each offering its own unique charm and ambiance.          
+                            </div>
+                            <button class="btn-cmt-like"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+
+                </div>
+                <div class="comment">
+                    <div class = "user-avt"><img src="/Cựu SV/Trang chủ/lover.jpg" alt="adds"></div>
+                    <div class = "cmt-info">
+                            <div class = "cmt-name"><span>Trí Minh</span></div>   
+                            <div class="cmt-value">
+                                One of the main attractions of Vũng Tàu is its picturesque coastline, with long stretches of sandy beaches bathed in warm tropical sunlight. Visitors can bask in the sun, take a refreshing dip in the clear blue waters, or engage in various water sports such as swimming, surfing, and jet skiing. The most well-known beaches in Vũng Tàu include Back Beach (Bãi Trước) and Front Beach (Bãi Sau), each offering its own unique charm and ambiance.          
+                            </div>
+                            <button class="btn-cmt-like"><i id="btn-like" class="fa-regular fa-heart"></i></button>
+                    </div>
+
+                </div>
+                <div class="comment">
+                    <div class = "user-avt"><img src="/Cựu SV/Trang chủ/lover.jpg" alt="adds"></div>
+                    <div class = "cmt-info">
+                            <div class = "cmt-name"><span>Trí Minh</span></div>   
+                            <div class="cmt-value">
+                                One of the main attractions of Vũng Tàu is its picturesque coastline, with long stretches of sandy beaches bathed in warm tropical sunlight. Visitors can bask in the sun, take a refreshing dip in the clear blue waters, or engage in various water sports such as swimming, surfing, and jet skiing. The most well-known beaches in Vũng Tàu include Back Beach (Bãi Trước) and Front Beach (Bãi Sau), each offering its own unique charm and ambiance.          
+                            </div>
+                            <button class="btn-cmt-like""><i id="btn-like" class="fa-regular fa-heart"></i></button>
+                    </div>
+
+                </div>
+            </div>
         </div>
+
         <div class ="post">
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
-        <div class ="post">
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-                      <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>          <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>          <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
-        <div class ="post">
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
-        <div class ="post">
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
-        <div class ="post">
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
-        <div class ="post">
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
-        <div class ="post">
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+            <div class = "user">
+                <div class = "user-avt"><img src="/Cựu SV/Trang chủ/lover.jpg" alt="adds"></div>
+                <div class = "name-time">
+                    <div class = "user-name"><span>Trí Minh</span></div>
+                    <div class= " post-time"><span>2h</span></div>
+                </div>
+            </div>
+            
+            <div class ="post-value">
+                <p class = "paragrap-post"> 
+                    
+                    These hands had to let it go free and
+
+                    This love came back to me
+                    
+
+                    This love left a permanent mark
+
+                    This love is glowing in the dark
+
+                    These hands had to let it go free and
+                    
+                    This love came back to me
+                </p>
+                <!-- <img class="img-post" src="" alt=""> -->
+            </div>
+
+            <div class ="interact-val">
+                <div>45 thích</div> 
+                <div>5 bình luận</div>
+            </div>
+
+            <div class= "btn-interact">
+                <button type="button" class="btn-like"><i id="btn-like" class="fa-regular fa-heart"></i><span>Yêu thích</span></button>
+                <button type="button" class ="btn-comment" onclick="showcmt()"><i id="btn-comment" class="fa-regular fa-comment"></i><span>Bình luận</span></button>
+            </div>
+
+            <div class ="cmt-container">
+                <div class="comment">
+                    <div class = "user-avt"><img src="/Cựu SV/Trang chủ/lover.jpg" alt="adds"></div>
+                    <div class = "cmt-info">
+                            <div class = "cmt-name"><span>Trí Minh</span></div>   
+                            <div class="cmt-value">
+                                One of the main attractions of Vũng Tàu is its picturesque coastline, with long stretches of sandy beaches bathed in warm tropical sunlight. Visitors can bask in the sun, take a refreshing dip in the clear blue waters, or engage in various water sports such as swimming, surfing, and jet skiing. The most well-known beaches in Vũng Tàu include Back Beach (Bãi Trước) and Front Beach (Bãi Sau), each offering its own unique charm and ambiance.          
+                            </div>
+                            <button class="btn-cmt-like"><i id="btn-like" class="fa-regular fa-heart"></i></button>
+                    </div>
+
+                </div>
+                <div class="comment">
+                    <div class = "user-avt"><img src="/Cựu SV/Trang chủ/lover.jpg" alt="adds"></div>
+                    <div class = "cmt-info">
+                            <div class = "cmt-name"><span>Trí Minh</span></div>   
+                            <div class="cmt-value">
+                                One of the main attractions of Vũng Tàu is its picturesque coastline, with long stretches of sandy beaches bathed in warm tropical sunlight. Visitors can bask in the sun, take a refreshing dip in the clear blue waters, or engage in various water sports such as swimming, surfing, and jet skiing. The most well-known beaches in Vũng Tàu include Back Beach (Bãi Trước) and Front Beach (Bãi Sau), each offering its own unique charm and ambiance.          
+                            </div>
+                            <button class="btn-cmt-like"><i id="btn-like" class="fa-regular fa-heart"></i></button>
+                    </div>
+
+                </div>
+                <div class="comment">
+                    <div class = "user-avt"><img src="/Cựu SV/Trang chủ/lover.jpg" alt="adds"></div>
+                    <div class = "cmt-info">
+                            <div class = "cmt-name"><span>Trí Minh</span></div>   
+                            <div class="cmt-value">
+                                One of the main attractions of Vũng Tàu is its picturesque coastline, with long stretches of sandy beaches bathed in warm tropical sunlight. Visitors can bask in the sun, take a refreshing dip in the clear blue waters, or engage in various water sports such as swimming, surfing, and jet skiing. The most well-known beaches in Vũng Tàu include Back Beach (Bãi Trước) and Front Beach (Bãi Sau), each offering its own unique charm and ambiance.          
+                            </div>
+                            <button class="btn-cmt-like""><i id="btn-like" class="fa-regular fa-heart"></i></button>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </div>
     
