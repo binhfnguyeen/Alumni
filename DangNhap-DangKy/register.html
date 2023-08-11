@@ -23,6 +23,10 @@
                     <input type="text" placeholder="Username" id="username" required>
                 </div>
                 <div class="row">
+                    <label for="gmail" >Gmail: </label>
+                    <input type="text" placeholder="Nhập gmail" id="gmail" required>
+                </div>
+                <div class="row">
                     <label for="password">Mật khẩu: </label>
                     <input type="password" placeholder="Nhập mật khẩu" id="password" required>
                 </div>
@@ -37,9 +41,16 @@
             </div>
         </form>
         <div class="login">
-            <p>Bạn đã có tài khoản rồi? <a href="http://127.0.0.1:5500/DangNhap-DangKy/login.html">Đăng nhập</a>.</p>
+            <p>Bạn đã có tài khoản rồi? <a href="http://127.0.0.1:5501/DangNhap-DangKy/login.html">Đăng nhập</a>.</p>
         </div>
     </section>
-    <script src="/DangNhap-DangKy/kiemtra.js"></script>
+    <!-- Hiệu ứng -->
+    <canvas id="my-canvas"></canvas>
+    <script src="/DangNhap-DangKy/raw.githubusercontent.com_Agezao_confetti-js_master_dist_index.min.js"></script>
+    <script>
+        var confettiSettings = { target: 'my-canvas' };
+        var confetti = new ConfettiGenerator(confettiSettings);
+        confetti.render();
+    </script>
 </body>
 </html>

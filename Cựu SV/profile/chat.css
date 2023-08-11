@@ -1,0 +1,457 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    position: relative;
+}
+
+.chat-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex-grow: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 100;
+    height: 520px;
+}
+
+/*Friends list*/
+.friends-list {
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    flex-grow: 1;
+    margin-bottom: 10px;
+}
+
+.friends-list h2 {
+    margin: 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.friends-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.friends-list li {
+    padding: 10px 5px 0;
+    width: 150px;
+    cursor: pointer;
+}
+
+/* sub-menu */
+.friends-list li .sub-menu {
+    display: none;
+}
+
+.friends-list li:hover .sub-menu{
+    opacity: 1;
+    width: 150px;
+    display: block;
+}
+
+.search-friends {
+    margin-bottom: 10px;
+}
+
+.search-friends h2 {
+    margin: 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+
+.search-friends input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.search-friends button {
+    padding: 8px 15px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    left: 75px;
+}
+
+.search-friends button:hover {
+    background-color: #0056b3;
+}
+
+.acc-friends {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.acc-friends > img {
+    width: 45px;
+    border-radius: 100px;
+    margin-right: 10px;
+}
+
+ul.friends > li:hover{
+    background-color: lightgray;
+    border-radius: 100px;
+    width: 150px;
+    box-shadow: 1px 1px 5px rgb(140, 138, 138, 0.5);
+    transition: background-color 0.5s;
+}
+
+.friends-list li{
+    display: flex;
+    align-items: center;
+}
+
+.friends-list li span{
+    padding: 10px;
+}
+
+div.friends-list > h2 > img{
+    width: 45px;
+}
+
+/*Body*/
+.container{
+    position: absolute;
+    right: 5px;
+    bottom: 10px;
+}
+
+.profile-body{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.flex-container{
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+}
+
+.right{
+    background-color: lightskyblue;
+    border-radius: 5px;
+    position: relative;
+}
+
+.middle{
+    position: absolute;
+    right: 310px;
+    background-color: #ffffff;
+    min-width: 700px;
+    height: 500px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgb(140, 138, 138, 0.5);
+    display: flex;
+}
+
+.edit-avt{
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-avt > img.avatar{
+    transition: transform 0.3s ease-in-out;
+}
+.edit-avt > img.avatar:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.edit-avt button{
+    margin-top: 20px;
+    padding: 10px;
+    background-color: lightskyblue;
+    border: 1px solid lightcyan;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.edit-avt button:hover{
+    transition: background-color 1s;
+    color: white;
+    cursor: pointer;
+    background-color: #0056b3;
+}
+
+.avatar{
+    width: 150px;
+    border-radius: 100px;
+    border: 2px solid lightcyan;
+    box-shadow: 1px 1px 5px rgb(140, 138, 138, 0.5);
+}
+
+.pad-info{
+    padding: 10px;
+    width: 350px;
+}
+.info{
+    margin: 0 auto;
+    align-items: center;
+}
+
+.info h2{
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 2px 1px 2px rgb(140, 138, 138, 0.5)s;
+}
+
+.informa{
+    background-color: lightgreen;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgb(140, 138, 138, 0.5);
+}
+
+div.info-profile{
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgb(140, 138, 138, 0.5);
+}
+
+div button.btn-edit{
+    margin-top: 10px;
+    padding: 5px;
+    background-color: lightskyblue;
+    border: 1px solid lightcyan;
+    border-radius: 5px;
+    font-size: 14px;
+    box-shadow: 1px 1px 5px rgb(140, 138, 138, 0.5);
+}
+
+p > i{
+   padding: 2px;
+}
+
+div button.btn-edit:hover{
+    transition: background-color 1s;
+    color: white;
+    cursor: pointer;
+    background-color: #0056b3;
+}
+
+div.contact{
+    background-color: white;
+    border-radius: 10px;
+    padding: 2px;
+    margin-top: 8px;
+    box-shadow: 1px 1px 5px rgb(140, 138, 138, 0.5);
+}
+
+div.ads{
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgb(140, 138, 138, 0.5);
+    position: absolute;
+    z-index: 100;
+    min-width: 200px;
+    right: 1128px;
+    border-radius: 5px;
+    background-color: lightskyblue;
+}
+
+div.left img{
+    width: 95%;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(26, 25, 25, 0.5);
+    border: 1px solid lightcyan;
+}
+
+div.left span{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+nav.pro-body{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+nav.pro-body div.album{
+    position: absolute;
+    right: 310px;
+    top: 550px;
+}
+
+div.album{
+    background-color: #ffffff;
+    min-width: 700px;
+    height: 500px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgb(140, 138, 138, 0.5);
+    display: flex;
+    position: relative;
+}
+
+.album-flex{
+    display: flex;
+    position: absolute;
+    top: 95px;
+    left: 90px;
+}
+div.img1{
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgb(140, 138, 138, 0.5);
+    background-color: lightgreen;
+    z-index: 100;
+    padding: 5px;
+}
+div.img1 > img{
+    width: 350px;
+    border-radius: 10px;
+    background-color: lightgreen;
+    border: 1px solid lightcyan;
+    box-shadow: 1px 1px 5px rgb(140, 138, 138, 0.5);
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+div.img1 > img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+ul.img2{
+    border: 1px solid lightcyan;
+    border-radius: 5px;
+    background-color: lightgreen;
+    box-shadow: 1px 1px 5px rgb(140, 138, 138, 0.5);
+    padding: 5px;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+ul.img2 div{
+    list-style-type: none;
+    width: 48%;
+    padding: 2px;
+    margin-bottom: 10px;
+}
+
+ul.img2 img{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid lightcyan;
+    padding: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+ul.img2 img:hover{
+    transform: scale(1.1);
+    z-index: 100;
+    cursor: pointer;
+}
+div.pic-btn{
+    position: absolute;
+    top: 400px;
+    left: 460px;
+}
+
+.mid-h2{
+    position: absolute;
+    left: 340px;
+    font-size: bold;
+    background-color: lightskyblue;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgb(140, 138, 138, 0.5);
+}
+
+div.footer{
+    background: lightpink;
+    width: 96%;
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgb(140, 138, 138, 0.5);
+    top: 470px;
+    overflow: hidden;
+}
+
+div.footer > p{
+    color: white;
+    animation: move 10s linear infinite;
+    white-space: nowrap;
+}
+
+ul.friends{
+    position: relative;
+}
+
+div.sub-menu{
+    background-color: lightcoral;
+    box-shadow: 1px 1px 5px rgb(140, 138, 138, 0.5);
+    padding: 1px;
+    border-radius: 5px;
+    position: absolute;
+    right: 190px;
+    font-size: 10px;
+    width: 150px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+div.sub-menu::after{
+    content: "";
+    border-style: solid;
+    border-color: transparent transparent transparent lightcoral;
+    border-width: 10px;
+    position: absolute;
+    left: 148px;
+    bottom: 25px;
+}
+
+@keyframes move{
+    0%{
+        transform: translateX(100%);
+    } 
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+.friends-list li.highlighted {
+    border-radius: 100px;
+    border: 3px solid green;
+    animation: flashBorder 1.8s 3;
+}
+
+@keyframes flashBorder {
+    0%, 100% {
+        border: 3px solid green;
+    }
+    50% {
+        border: none;
+    }
+}
