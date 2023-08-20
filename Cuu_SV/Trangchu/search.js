@@ -4,20 +4,7 @@ function focusInput() {
     
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-  var menu = document.querySelector(".menu-header");
-  //ẩn cmt
-  var cmt = document.querySelectorAll(".cmt-container");
-  menu.style.display = "none";
-  cmt.forEach(function(button) {
-    button.style.display = "none";
-  })
- // ẩn phần lòi ra dư
-  var cmtwrite = document.querySelectorAll(".cmt-active");
-  cmtwrite.forEach(function(button) {
-    button.style.display = "none";
-  })
-});
+
 
 function openmenuheader() {
     var menu = document.querySelector(".menu-header");
@@ -40,33 +27,6 @@ function toggleArrow() {
     }
     arrowIsFlipped = !arrowIsFlipped;
 }
-
-// nhận sự kiện ấn vào nút ,,,
-document.addEventListener("DOMContentLoaded", function() {
-    var likeButtons = document.querySelectorAll(".btn-like");
-    var cmtLike = document.querySelectorAll(".btn-cmt-like");
-    var cmt = document.querySelectorAll(".btn-comment");
-    likeButtons.forEach(function(button) {
-        button.addEventListener("click", function() {
-            likePost(this);
-        });
-    });
-
-    cmtLike.forEach(function(button) {
-        button.addEventListener("click", function() {
-            likePost(this);
-        });
-    });
-
-    cmt.forEach(function(button) {
-        button.addEventListener("click", function() {
-            showcmt(this);
-            interractshow(this);
-            cmtentershow(this);
-        });
-    });
-    
-});
 
 function likePost(button) {
     var likeIcon = button.querySelector(".fa-heart");
@@ -111,7 +71,7 @@ function cmtentershow(button) {
 
     }
 }
-
+//tạo hịu ứng cho thanh add ảnh chạy bên phải
 document.addEventListener("DOMContentLoaded", function() {
     let list = document.querySelector('.colum-right-2 .slider-1 .list');
     let items = document.querySelectorAll('.colum-right-2 .slider-1 .list .item');
@@ -131,39 +91,44 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     setInterval(reloadSlider, 1900);
-});
-document.addEventListener("DOMContentLoaded", function() {
-    let list = document.querySelector('.colum-right-2 .slider-2 .list');
-    let items = document.querySelectorAll('.colum-right-2 .slider-2 .list .item');
 
-    let active = 0;
-    let lengthitem = items.length - 1;
+    let list1 = document.querySelector('.colum-right-2 .slider-2 .list');
+    let items1 = document.querySelectorAll('.colum-right-2 .slider-2 .list .item');
 
-    let slideWidth = items[0].offsetWidth; // Độ dài của mỗi ảnh
+    let active1 = 0;
+    let lengthitem1 = items1.length - 1;
 
-    function reloadSlider() {
-        if (active > lengthitem) {
-            active = 0; // Quay trở lại ảnh đầu tiên khi đến ảnh cuối cùng
+    let slideWidth1 = items1[0].offsetWidth; // Độ dài của mỗi ảnh
+
+    function reloadSlider1() {
+        if (active1 > lengthitem1) {
+            active1 = 0; // Quay trở lại ảnh đầu tiên khi đến ảnh cuối cùng
         }
-        let newPosition = -active * slideWidth;
-        list.style.transform = `translateX(${newPosition}px)`;
-        active++; // Tăng chỉ số hiển thị ảnh kế tiếp
+        let newPosition1 = -active1 * slideWidth1;
+        list1.style.transform = `translateX(${newPosition1}px)`;
+        active1++; // Tăng chỉ số hiển thị ảnh kế tiếp
     }
 
-    setInterval(reloadSlider, 1800);
+    setInterval(reloadSlider1, 1800);
 });
 
-function loadadds(){
-    fetch("Cuu_SV/Trangchu/adds.json")
-    .then(res => res.json())
-    .then(data => {
-        let h = "";
+
+// Hàm load dữ liệu từ file JSON
+function loadDataFromJSON(url) {
+    return fetch(url)
+        .then(res => res.json());
+}
+
+// Hàm load adds
+function loadadds(data) {
+    // Implement loadadds here
+            let h = "";
         for (let c of data){
             h +=  `
             <div class ="adds">
                 <a href="${c.diachi}" >
                     <span>${c.tieude}</span>
-                    <img class ="img-add" src="Cuu_SV/image/adds/${c.anh}"> 
+                    <img class ="img-add" src="/Cuu_SV/image/adds/${c.anh}"> 
                 </a>
             </div>
             `;
@@ -173,8 +138,155 @@ function loadadds(){
         if(h != null){
             e.innerHTML += h;
         }
-    });
-    window.onload = function(){
-        loadadds();
+}
+
+// Hàm load business
+function loadbusiness(data) {
+    // Implement loadbusiness here
+    let h = "";
+    for (let c of data){
+        h +=  `
+        <div class ="adds">
+            <a href="${c.diachi}" >
+                <img class ="img-add" src="/Cuu_SV/business_img/${c.anh}.jpg"> 
+            </a>
+        </div>`
+        ;
     }
-};
+
+    let e = document.getElementById("business");
+    if(h != null){
+        e.innerHTML += h;
+    }
+}
+
+// Hàm load post
+function loadpost(data) {
+    // Implement loadpost here
+    let h = "";
+        for (let c of data){
+            let postlike = parseInt(c.like_num);
+            let postcmt = parseInt(c.cmt_num);
+            h += 
+            `
+            <div class ="post">
+            <div class = "user">
+                <div class = "user-avt"><img src="${c.avt}" alt="adds"></div>
+                <div class = "name-time">
+                    <div class = "user-name"><span>${c.name}</span></div>
+                    <div class= " post-time"><span>${c.time}</span></div>
+                </div>
+            </div>
+            
+            <div class ="post-value">
+                <p class = "paragrap-post"> 
+                    ${c.value}
+                </p>
+            </div>
+            <div class="img-post">
+                <img class="img-post" src="${c.img}" alt="post">
+            </div>
+
+            <div class ="interact-val">
+                <div>${postlike} thích</div> 
+                <div>${postcmt} bình luận</div>
+            </div>
+
+            <div class= "btn-interact">
+                <button type="button" class="btn-like"><i class="fa-regular fa-heart"></i><span>Yêu thích</span></button>
+                <button type="button" class ="btn-comment"><i class="fa-regular fa-comment"></i><span>Bình luận</span></button>
+            </div>
+
+            <div class ="cmt-container">`
+            
+            for(let i of c.cmt ){
+                h+=                 
+                `<div class="comment">
+                    <div class = "user-avt"><img src="${i.avt}" alt="adds"></div>
+                    <div class = "cmt-info">
+                            <div class = "cmt-name"><span>${i.name}</span></div>   
+                            <div class="cmt-value">
+                                ${i.value}
+                            </div>
+                            <button class="btn-cmt-like"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>`
+            };
+
+            h+=
+            `</div>
+            <div class ="cmt-active">
+                <div class="cmt-enter">
+                    <div class = "user-avt"><img src="/Cuu_SV/Trangchu/lover.jpg" alt="adds"></div>
+                    <div class = "write-cmt ">
+                        <textarea id="cmt-info" type="text" placeholder="Nhập bình luận của bạn..."></textarea>
+                        <div class="cmt-options">
+                            <ul>
+                                <li><i class="fa-regular fa-image"></i></li>
+                                <li><i class="fa-regular fa-face-smile"></i></li>
+                                <li><i class="fa-solid fa-paper-plane"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+            `
+ 
+        };
+
+        let e = document.getElementById("post-container");
+        if(h != null){
+            e.innerHTML += h;
+        }
+}
+
+// Đợi DOMContentLoaded trước khi thực thi
+document.addEventListener("DOMContentLoaded", async function() {
+    // Load data from JSON files
+    const addsData = await loadDataFromJSON("/Cuu_SV/Trangchu/adds.json");
+    const businessData = await loadDataFromJSON("/Cuu_SV/Trangchu/business.json");
+    const postData = await loadDataFromJSON("/Cuu_SV/Trangchu/post.json");
+
+    // Call your functions after data is loaded
+    loadadds(addsData);
+    loadbusiness(businessData);
+    loadpost(postData);
+
+    // ... Các xử lý khác của bạn ở đây
+    var cmtwrite = document.querySelectorAll(".cmt-active");
+    cmtwrite.forEach(function(button) {
+    button.style.display = "none";
+    })
+
+    var likeButtons = document.querySelectorAll(".btn-like");
+    var cmtLike = document.querySelectorAll(".btn-cmt-like");
+    var cmt = document.querySelectorAll(".btn-comment");
+    likeButtons.forEach(function(button) {
+        button.addEventListener("click", function() {
+            likePost(this);
+        });
+    });
+
+    cmtLike.forEach(function(button) {
+        button.addEventListener("click", function() {
+            likePost(this);
+        });
+    });
+
+    cmt.forEach(function(button) {
+        button.addEventListener("click", function() {
+            showcmt(this);
+            interractshow(this);
+            cmtentershow(this);
+        });
+    });
+        //ẩn cmt
+    var menu = document.querySelector(".menu-header");
+    var cmt = document.querySelectorAll(".cmt-container");
+    menu.style.display = "none";
+    cmt.forEach(function(button) {
+      button.style.display = "none";
+    })
+});
