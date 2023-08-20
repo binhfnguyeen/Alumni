@@ -1,8 +1,97 @@
-{
-    "post":[
-        {
-            "id": "1",
-            "name": ""
-        }
-    ]
-}
+[
+    {
+        "name": "Khải An",
+        "avt": "/Cuu_SV/Trangchu/avt-post/avtpost1.jpg",
+        "time": "15 tháng 8 lúc 15h00",
+        "value":"TÌM NHÓM NGHIÊN CỨU KHOA HỌC. Hiện tại mình là k20 khoa Xã Hội Học đang tìm nhóm để cùng nhau làm Nghiên cứu khoa học. ANH, CHỊ, BẠN NÀO CHƯA CÓ NHÓM HOẶC ĐANG THIẾU THÀNH VIÊN THÌ LIÊN HỆ VỚI EM(MÌNH) CÙNG NHAU LÀM NCKH ĐƯỢC KHÔNG Ạ? Em(mình) cảm ơn mọi người rất nhiều ạ.",
+        "img": "/Cuu_SV/Trangchu/post-img/postimg1.jpg",
+        "like-num": "2",
+        "cmt-num": "1",
+        "cmt": [
+            {
+                "name": "Duyen Huynh",
+                "avt": "/Cuu_SV/Trangchu/avt-cmt/avtcmt1.jpg",
+                "value": "Mình nghiên cứu chung với nha!"
+            }
+        ]
+    },
+    {
+        "name": "Kênh Thông Tin - Sự Kiện khoa CNTT Đại học Mở Tp.HCM",
+        "avt": "/Cuu_SV/Trangchu/avt-post/avtpost2.jpg",
+        "time": "12 tháng 12, năm 2022",
+        "value":"Báo cáo chuyên đề: Hiểu rõ thêm về nghề An ninh mạng. - Báo cáo viên: Anh Ngô Minh Hiếu (Hiếu PC) - Chuyên gia giám sát tại Trung tâm Giám sát An toàn không gian mạng Quốc gia (NCSC Việt Nam) & Co-founder dự án chongluadao.vn. Đồng thời là Threat Contributor tại APWG, PhishTank, VirusTotal, URLScan và Scamadviser. - Thời gian: 08g45 ngày 15/12 (Thứ Năm) - Địa điểm: NK204 - Cơ sở 371 Nguyễn Kiệm, Phường 03, Gò Vấp. - Link đăng ký: https: //forms.gle/AcGKvMKzXMzXcXvV8 - Đối tượng tham gia: sinh viên Trường và cựu sinh viên quan tâm. * Sinh viên tham gia được +5đrl vào học kỳ I năm học 2022-2023.",
+        "img": "/Cuu_SV/Trangchu/post-img/postimg2.jpg",
+        "like-num": "459",
+        "cmt-num": "2",
+        "cmt": [
+            {
+                "name": "Hồ Minh Trung",
+                "avt": "/Cuu_SV/Trangchu/avt-cmt/avtcmt2.jpg",
+                "value": "Yeahhhhhhhhh!!! ANH HIẾU PC!!!"
+            },
+            {
+                "name": "Hồ Minh Trung",
+                "avt": "/Cuu_SV/Trangchu/avt-cmt/avtcmt2.jpg",
+                "value": "Mọi người tham gia với mình nhaaa"
+            }
+        ]
+    },
+    {
+        "name": "Huỳnh Nhã",
+        "avt": "/Cuu_SV/Trangchu/avt-post/avtpost3.jpg",
+        "time": "10 tháng 10, năm 2022",
+        "value": "Cho em xin ý kiến :D",
+        "img": "/Cuu_SV/Trangchu/post-img/postimg3.jpg",
+        "like-num": "149",
+        "cmt-num": "1",
+        "cmt": [
+            {
+                "name": "Lê Nguyễn Tài",
+                "avt": "/Cuu_SV/Trangchu/avt-cmt/avtcmt3.jpg",
+                "value": "Nên nha bạn. Bạn chỉ cần có 1 trái tim yêu thương là được :D"
+            }
+        ]
+    },
+    {
+        "name": "Sinh viên Sài Gòn Confession",
+        "avt": "/Cuu_SV/Trangchu/avt-post/avtpost4.jpg",
+        "time": "23 giờ",
+        "value": "Các bạn như thế nào? :DD",
+        "img": "/Cuu_SV/Trangchu/post-img/postimg4.jpg",
+        "like-num": "123",
+        "cmt-num": "3",
+        "cmt": [
+            {
+                "name": "Kathy Khanh Nguyen",
+                "avt": "/Cuu_SV/Trangchu/avt-cmt/avtcmt4.jpg",
+                "value": "Deadline ngập đầu :))"
+            },
+            {
+                "name": "Đặng Hân",
+                "avt": "/Cuu_SV/Trangchu/avt-cmt/avtcmt5.jpg",
+                "value": "Ủa thiệt hả :*)"
+            },
+            {
+                "name": "Lê Thẩm Duyên",
+                "avt": "/Cuu_SV/Trangchu/avt-cmt/avtcmt6.jpg",
+                "value": "Đúng rồi :(("
+            }
+        ]
+    },
+    {
+        "name": "Trần Văn Trí Hữu",
+        "avt": "/Cuu_SV/Trangchu/avt-post/avtpost5.jpg",
+        "time": "7 giờ",
+        "value": "Hóng ạ",
+        "img": "/Cuu_SV/Trangchu/post-img/postimg5.jpg",
+        "like-num": "6",
+        "cmt-num": "1",
+        "cmt": [
+            {
+                "name": "Bình Nguyên đẹp trai số 1",
+                "avt": "/Cuu_SV/Trangchu/avt-cmt/avtcmt7.jpg",
+                "value": "Đoán xemmmm :v"
+            }
+        ]
+    }
+]
