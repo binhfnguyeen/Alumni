@@ -6,9 +6,15 @@ function focusInput() {
 
 document.addEventListener("DOMContentLoaded", function() {
   var menu = document.querySelector(".menu-header");
+  //ẩn cmt
   var cmt = document.querySelectorAll(".cmt-container");
   menu.style.display = "none";
   cmt.forEach(function(button) {
+    button.style.display = "none";
+  })
+ // ẩn phần lòi ra dư
+  var cmtwrite = document.querySelectorAll(".cmt-active");
+  cmtwrite.forEach(function(button) {
     button.style.display = "none";
   })
 });
@@ -35,7 +41,7 @@ function toggleArrow() {
     arrowIsFlipped = !arrowIsFlipped;
 }
 
-//nhận sự kiện ấn vào nút ,,,
+// nhận sự kiện ấn vào nút ,,,
 document.addEventListener("DOMContentLoaded", function() {
     var likeButtons = document.querySelectorAll(".btn-like");
     var cmtLike = document.querySelectorAll(".btn-cmt-like");
@@ -55,6 +61,8 @@ document.addEventListener("DOMContentLoaded", function() {
     cmt.forEach(function(button) {
         button.addEventListener("click", function() {
             showcmt(this);
+            interractshow(this);
+            cmtentershow(this);
         });
     });
     
@@ -75,6 +83,7 @@ function likePost(button) {
 // Hàm xử lý khi click vào nút bình luận
 function showcmt(button) {
     var cmtContainer = button.closest(".btn-interact").nextElementSibling; // Lấy phần tử .cmt-container
+    //cmtentershow(cmtContainer);
     if(cmtContainer.style.display ==="none") {
         cmtContainer.style.display = "block";
     }
@@ -82,5 +91,64 @@ function showcmt(button) {
         cmtContainer.style.display = "none";
 }
 
+function interractshow(button) {
+    var interactContainer = button.closest(".btn-interact");
+    if (interactContainer.classList.contains("btn-interact-active")) {
+        interactContainer.classList.remove("btn-interact-active");
+    } else {
+        interactContainer.classList.add("btn-interact-active");
+    }
+}
 
+function cmtentershow(button) {
+    var parent = button.closest(".post"); // Thay ".btn-interact" bằng ".post"
+    var cmtwrite = parent.querySelector(".cmt-active"); // Thay ".nextElementSibling.nextElementSibling" bằng ".cmt-enter"
+    if (cmtwrite.style.display === "none"){
+        cmtwrite.style.display = "block";
+    }
+    else{
+        cmtwrite.style.display = "none";
 
+    }
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    let list = document.querySelector('.colum-right-2 .slider-1 .list');
+    let items = document.querySelectorAll('.colum-right-2 .slider-1 .list .item');
+
+    let active = 0;
+    let lengthitem = items.length - 1;
+
+    let slideWidth = items[0].offsetWidth; // Độ dài của mỗi ảnh
+
+    function reloadSlider() {
+        if (active > lengthitem) {
+            active = 0; // Quay trở lại ảnh đầu tiên khi đến ảnh cuối cùng
+        }
+        let newPosition = -active * slideWidth;
+        list.style.transform = `translateX(${newPosition}px)`;
+        active++; // Tăng chỉ số hiển thị ảnh kế tiếp
+    }
+
+    setInterval(reloadSlider, 1900);
+});
+document.addEventListener("DOMContentLoaded", function() {
+    let list = document.querySelector('.colum-right-2 .slider-2 .list');
+    let items = document.querySelectorAll('.colum-right-2 .slider-2 .list .item');
+
+    let active = 0;
+    let lengthitem = items.length - 1;
+
+    let slideWidth = items[0].offsetWidth; // Độ dài của mỗi ảnh
+
+    function reloadSlider() {
+        if (active > lengthitem) {
+            active = 0; // Quay trở lại ảnh đầu tiên khi đến ảnh cuối cùng
+        }
+        let newPosition = -active * slideWidth;
+        list.style.transform = `translateX(${newPosition}px)`;
+        active++; // Tăng chỉ số hiển thị ảnh kế tiếp
+    }
+
+    setInterval(reloadSlider, 1800);
+});
