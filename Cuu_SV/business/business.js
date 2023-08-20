@@ -8,7 +8,7 @@ changeImg = function(){
     }
 }
 setInterval(changeImg, 3000);
-
+//Ads thay doi
 var i = 0;
 var imgs1 = ["/Cuu_SV/business/img/d1.jpg", "/Cuu_SV/business/img/d2.jpg"];
 var imgs2 = ["/Cuu_SV/business/img/d3.jpg", "/Cuu_SV/business/img/d4.jpg"];
@@ -16,7 +16,7 @@ var imgs3 = ["/Cuu_SV/business/img/d5.jpg", "/Cuu_SV/business/img/d6.jpg"];
 var img1 = document.getElementById("i1");
 var img2 = document.getElementById("i2");
 var img3 = document.getElementById("i3");
-
+//Doc thong tin
 function changeAds() {
     img1.src = imgs1[i];
     img2.src = imgs2[i];
@@ -48,10 +48,25 @@ function loadbusiness(){
 };
 
 window.onload = function(){
-    loadbusiness()
+    loadbusiness();
 };
 
+window.onscroll = function(){
+    scrollFunc();
+};
+
+function scrollFunc(){
+    var toTopBtn = document.getElementById("onTop");
+    if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+        toTopBtn.classList.add("show");
+    } else {
+        toTopBtn.classList.remove("show");
+    }
+}
 
 
 
-
+function onTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}

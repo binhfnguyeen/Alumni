@@ -41,24 +41,6 @@ div.network2 > p{
     text-align: center;
 }
 
-div.login-btn{
-    background-color: gray;
-    padding: 5px;
-    border-radius: 5px;
-    margin: 5px 5px 0 0;
-    box-shadow: 1px 1px 5px rgb(140, 138, 138, 0.5);
-}
-
-div.login-btn > a{
-    color: white;
-    display: block;
-}
-
-div.login-btn:hover{
-    background-color: lightblue;
-    color: gray;
-}
-
 .pic2{
     width: 290px;
     height: 40px;
@@ -83,6 +65,9 @@ ul.menus li{
     font-weight: bold;
 }
 
+ul.menus a{
+    color: white;
+}
 ul.menus li:hover{
     background-color: blue;
     color: white;
@@ -254,4 +239,31 @@ ul.nav-end a:hover{
     padding: 20px auto;
     border-radius: 5px;
     box-shadow: 1px 1px 5px rgb(140, 138, 138, 0.5);
+}
+
+button.btn{
+    border: none;
+    background: none;
+}
+
+button.btn > img{
+    border-radius: 100%;
+    width: 100px;
+    box-shadow: 1px 1px 5px rgb(140, 138, 138, 0.5);
+}
+
+#onTop{
+    position: fixed;
+    z-index: 999;
+    top: 70%;
+    right: 10px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+#onTop.show{
+    opacity: 1;
+    visibility: visible;
 }
