@@ -182,9 +182,13 @@ section.choice .menu-header > li a {
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 8px;
-    width: 578px;
+    width: 650px;
     box-shadow: 1px 1px 5px rgb(140, 138, 138, 0.5);
     transition: box-shadow 0.3s ease;
+}
+
+.img-post{
+    width: 100%;
 }
 
 
@@ -211,7 +215,7 @@ section.choice .menu-header > li a {
 .colum-right {
     width: 12%;
     position: fixed;
-    left: 16%;
+    left: 12.5%;
     text-align: center;
 }
 .user-profile {
@@ -345,7 +349,7 @@ button#btn-profile:hover{
 
 
 
-@media screen and (max-width: 1380px) {
+/* @media screen and (max-width: 1380px) {
     .colum-right {
         display: none;
     }
@@ -358,7 +362,7 @@ button#btn-profile:hover{
     .colum-right-2{
         display: none;
     }
-}
+} */
 
 /* edit avt + teen */
 
@@ -463,14 +467,12 @@ button#post-btn:hover {
 }
 
 .comment {
-
     display: flex;
-    background-color: rgb(0 0 0 60%);
     margin-bottom: 20px;
 }
 
 .cmt-info {
-    background-color: rgb(0, 0, 0, 0.1);
+    background-color: rgb(0, 0, 0, 0.04);
     padding: 10px;
     border-radius: 15px;
     position: relative;
