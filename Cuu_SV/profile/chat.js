@@ -1,7 +1,7 @@
 //Ads changes
 var index=0;
 changeImg = function(){
-    var imgs = ["/Cựu SV/profile/img/sv1.1.jpg", "/Cựu SV/profile/img/sv1.2.jpg","/Cựu SV/profile/img/sv1.3.jpg","/Cựu SV/profile/img/sv1.4.jpg","/Cựu SV/profile/img/sv1.5.jpg", "/Cựu SV/profile/img/sv1.6.jpg"];
+    var imgs = ["/Cuu_SV/profile/img/sv1.1.jpg", "/Cuu_SV/profile/img/sv1.2.jpg","/Cuu_SV/profile/img/sv1.3.jpg","/Cuu_SV/profile/img/sv1.4.jpg","/Cuu_SV/profile/img/sv1.5.jpg", "/Cuu_SV/profile/img/sv1.6.jpg"];
     document.getElementById("img").src = imgs[index];
     index++;
     if(index==imgs.length){

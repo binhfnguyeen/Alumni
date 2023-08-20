@@ -1,6 +1,6 @@
 var index=0;
 changeImg = function(){
-    var imgs = ["/Cựu SV/business/img/1.jpg", "/Cựu SV/business/img/2.jpg","/Cựu SV/business/img/3.jpg","/Cựu SV/business/img/4.jpg"];
+    var imgs = ["/Cuu_SV/business/img/1.jpg", "/Cuu_SV/business/img/2.jpg","/Cuu_SV/business/img/3.jpg","/Cuu_SV/business/img/4.jpg"];
     document.getElementById("img").src = imgs[index];
     index++;
     if(index==imgs.length){
@@ -10,9 +10,9 @@ changeImg = function(){
 setInterval(changeImg, 3000);
 
 var i = 0;
-var imgs1 = ["/Cựu SV/business/img/d1.jpg", "/Cựu SV/business/img/d2.jpg"];
-var imgs2 = ["/Cựu SV/business/img/d3.jpg", "/Cựu SV/business/img/d4.jpg"];
-var imgs3 = ["/Cựu SV/business/img/d5.jpg", "/Cựu SV/business/img/d6.jpg"];
+var imgs1 = ["/Cuu_SV/business/img/d1.jpg", "/Cuu_SV/business/img/d2.jpg"];
+var imgs2 = ["/Cuu_SV/business/img/d3.jpg", "/Cuu_SV/business/img/d4.jpg"];
+var imgs3 = ["/Cuu_SV/business/img/d5.jpg", "/Cuu_SV/business/img/d6.jpg"];
 var img1 = document.getElementById("i1");
 var img2 = document.getElementById("i2");
 var img3 = document.getElementById("i3");
