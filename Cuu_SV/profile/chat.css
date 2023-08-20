@@ -4,8 +4,8 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
     background-color: #f0f0f0;
     position: relative;
@@ -159,10 +159,10 @@ div.friends-list > h2 > img{
 
 .middle{
     position: absolute;
-    right: 310px;
+    right: 130%;
     background-color: #ffffff;
     min-width: 700px;
-    height: 500px;
+    height: 90%;
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -297,8 +297,8 @@ nav.pro-body{
 
 nav.pro-body div.album{
     position: absolute;
-    right: 310px;
-    top: 550px;
+    right: 130%;
+    top: 100%;
 }
 
 div.album{
@@ -375,13 +375,13 @@ ul.img2 img:hover{
 }
 div.pic-btn{
     position: absolute;
-    top: 400px;
-    left: 460px;
+    top: 40%;
+    left: 46%;
 }
 
 .mid-h2{
     position: absolute;
-    left: 340px;
+    left: 34%;
     font-size: bold;
     background-color: lightskyblue;
     padding: 5px;
@@ -395,7 +395,7 @@ div.footer{
     position: absolute;
     border-radius: 10px;
     box-shadow: 1px 1px 5px rgb(140, 138, 138, 0.5);
-    top: 470px;
+    top: 375px;
     overflow: hidden;
 }
 
@@ -404,6 +404,7 @@ div.footer > p{
     animation: move 10s linear infinite;
     white-space: nowrap;
 }
+
 
 ul.friends{
     position: relative;
@@ -417,7 +418,7 @@ div.sub-menu{
     position: absolute;
     right: 190px;
     font-size: 10px;
-    width: 150px;
+    width: 10%;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
@@ -453,5 +454,60 @@ div.sub-menu::after{
     }
     50% {
         border: none;
+    }
+}
+
+.bottom{
+    background: lightpink;
+    width: 96%;
+    position: fixed;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 1px 1px 5px rgb(140, 138, 138, 0.5);
+    bottom: 0;
+    overflow: hidden;
+    z-index: 999;
+    width: 53.66%;
+    left: 23%;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+footer.bottom div{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer.bottom div i{
+    color: black;
+}
+
+footer.bottom div i:hover{
+    color: blue;
+    border-top: 2px solid blue;
+    padding-top: 5px;
+}
+
+.pos-body{
+    display: flex;
+    flex-direction: column;
+}
+
+div.space  {
+    position: absolute;
+    height: 165px;
+    right: 600px;
+    top: 1090px;
+} 
+
+@media (max-width: 800px) {
+    div.left, div.right, div.space {
+        display: none;
+    }
+    .flex-container {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        gap: 20px;
     }
 }

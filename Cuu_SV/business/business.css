@@ -1,0 +1,245 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+nav.headers{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgb(140, 138, 138, 0.5);
+}
+
+a{
+    text-decoration: none;
+}
+
+div.network1 {
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: red;
+    box-shadow: 1px 1px 5px rgb(140, 138, 138, 0.5);
+}
+
+div.network1 > a{
+    color: white;
+    font-weight: bold;
+    display: block;
+}
+
+div.network2 > p{
+    font-size: 14px;
+    text-align: center;
+}
+
+div.login-btn{
+    background-color: gray;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px 5px 0 0;
+    box-shadow: 1px 1px 5px rgb(140, 138, 138, 0.5);
+}
+
+div.login-btn > a{
+    color: white;
+    display: block;
+}
+
+div.login-btn:hover{
+    background-color: lightblue;
+    color: gray;
+}
+
+.pic2{
+    width: 290px;
+    height: 40px;
+}
+
+ul.menus{
+    display: flex;
+    justify-content: center;
+}
+
+ul.menus li{
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 10px;
+    background-color: gray;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgb(140, 138, 138, 0.5);
+    transition: background-color 1.2s;
+    font-weight: bold;
+}
+
+ul.menus li:hover{
+    background-color: blue;
+    color: white;
+}
+
+section.banners{
+    display: flex;
+    justify-content: center;
+}
+
+div.banner > img{
+    height: 60%;
+    width: 100%;
+}
+
+div.banner > img{
+    width: 800px;
+    height: 240px;
+    border-radius: 10px;
+}
+
+main.body-ads {
+    background-color: white;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgb(140, 138, 138, 0.5);
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+main.body-ads > table{
+    width: 100%;
+    height: 100%;
+}
+
+ul.right{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+ul.right img{
+    border-radius: 5px;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+a > img{
+    width: 100%;
+}
+
+ul.left{
+    width: 80%;
+   overflow: hidden;
+   margin: 0 auto;
+   padding: 10px 0 0 0;
+}
+
+ul.left div.scroll-link{
+    background-color: lightskyblue;
+    width: 80%;
+    height: 300px;
+    margin: 0 auto;
+    border-radius: 10px 10px 5px 5px;
+    box-shadow: 1px 1px 5px rgb(140, 138, 138, 0.5);
+    border-top: 20px solid blue;
+    border-left: .5px solid black;
+    border-right: .5px solid black;
+    border-bottom: 20px solid blue;
+    overflow-y: scroll;
+}
+
+ul.left div.scroll-link::-webkit-scrollbar {
+    width: 10px;
+    display: none;
+}
+
+div.scroll-link a{
+    font-size: 14px;
+    padding: 20px;
+}
+
+.mini-ads img{
+    width: 100px;
+}
+
+.left-container{
+    display: flex;
+    flex-direction: column;
+}
+
+ul.mini-ads{
+    padding: 10px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+ul.mini-ads a>img{
+    width: 80%;
+    height: 20%;
+    border: 1px solid black;
+}
+
+ul.mini-ads li{
+    background-color: bisque;
+    box-shadow: 1px 1px 5px rgb(140, 138, 138, 0.5);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10%;
+}
+
+section.sect-ends{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.sect{ 
+    width: 60%;
+}
+
+div.gif-money{
+    width: 60%;
+}
+
+div.sect img{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgb(140, 138, 138, 0.5);
+}
+
+div.gif-money img{
+    border-radius: 5px;
+    width: 100%;
+    height: 165px;
+    box-shadow: 1px 1px 5px rgb(140, 138, 138, 0.5);
+}
+
+footer{
+    background-color: blue;
+    padding: 20px 0;
+}
+
+ul.nav-end{
+    display: flex;
+    justify-content: center;
+}
+
+ul.nav-end > li{
+    margin-right: 5%;
+    display: block;
+}
+
+ul.nav-end a{
+    color: white;
+}
