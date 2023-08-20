@@ -126,6 +126,8 @@ ul.right{
 }
 
 ul.right img{
+    width: 100%;
+    width: 520px;
     border-radius: 5px;
 }
 
@@ -227,7 +229,7 @@ div.gif-money img{
 
 footer{
     background-color: blue;
-    padding: 20px 0;
+    box-shadow: 1px 1px 5px rgb(140, 138, 138, 0.5);
 }
 
 ul.nav-end{
@@ -237,9 +239,19 @@ ul.nav-end{
 
 ul.nav-end > li{
     margin-right: 5%;
-    display: block;
 }
 
 ul.nav-end a{
     color: white;
+    display: block;
+    padding: 20px 0;
+}
+
+ul.nav-end a:hover{
+    transition: background-color 1.2s;
+    background-color: aqua;
+    color: black;
+    padding: 20px auto;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgb(140, 138, 138, 0.5);
 }

@@ -1,244 +1,49 @@
 <!DOCTYPE html>
 <html>
-<<<<<<< HEAD
-=======
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="/Cuu_SV/Trangchu/trangchu.css" />
+        <link rel="stylesheet" href="/Cuu_SV/Trangchu/search.css" />
+        <link rel="stylesheet" href="/Cuu_SV/profile/chat.css">
+        <link rel="shortcut icon" href="/Cuu_SV/profile/img/logo.png">
+        <script src="/Cuu_SV/Trangchu/search.js"></script>
+        <title>Allumni</title>
+    </head>
 
->>>>>>> 9f9ca8ca1adc49fbfe63f7e9d98ce68bf4946a08
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<<<<<<< HEAD
-    <link rel="stylesheet" href="/Cựu SV/Trangchu/trang chu.css"/>
-    <link rel="stylesheet" href="/Cựu SV/Trangchu/search.css"/>
-    <link rel="stylesheet" href="/Cựu SV/profile/chat.css">
-    <link rel="shortcut icon" href="/Cựu SV/profile/img/logo.png">
-    <script src="/Cựu SV/Trangchu/search.js"></script> 
-    <title>Allumni</title>
-</head>
-
-<body id ="body" onclick="closeall()">
-    <section class = "header ">
-        <section class="logo"><a href="#"><img src="/Cựu SV/image/3.png" alt="logo"/></a></section>
-        <section>
-            <form class="search-form" action="/tim-kiem" method="get" id="search-box">
-                <button type = "button" class="search-btn" onclick="focusInput()"><i class="fa-solid fa-magnifying-glass"></i></button>
-                <input class ="search-text" type="text" placeholder="tìm kiếm trên Allumni" >
-            </form>
-        </section>
-        <section class = "choice">
-            <button type="button" onclick="openmenuheader()" class = "button-menu"><i class="fa-solid fa-chevron-up"></i><i class="fa-solid fa-chevron-down"></i></button>
+    <body id="body" onclick="closeall()">
+        <section class="header ">
+            <section class="logo"><a href="#"><img src="/Cuu_SV/image/3.png" alt="logo" /></a></section>
+            <section>
+                <form class="search-form" action="/tim-kiem" method="get" id="search-box">
+                    <button type="button" class="search-btn" onclick="focusInput()"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                    <input class="search-text" type="text" placeholder="tìm kiếm trên Allumni">
+                </form>
+            </section>
+            <section class="choice">
+                <button type="button" onclick="openmenuheader()" class="button-menu"><i
+                        class="fa-solid fa-chevron-up"></i><i class="fa-solid fa-chevron-down"></i></button>
                 <ul class="menu-header">
                     <li>
-                        <button type="button" onclick="" class = ""><a href="#"><i class="fa-regular fa-user"></i><i class="fa-solid fa-chevron-right"></i><span>Tôi</span></a></button>
+                        <button type="button" onclick="" class=""><a href="#"><i class="fa-regular fa-user"></i><i
+                                    class="fa-solid fa-chevron-right"></i><span>Tôi</span></a></button>
                     </li>
                     <li>
-                        <button type="button" onclick="" class = ""><a href="#"><i class=" fa-solid fa-pen-to-square"></i><i class="fa-solid fa-chevron-right"></i><span>Đổi mặt khẩu</span></a></button>
+                        <button type="button" onclick="" class=""><a href="#"><i
+                                    class=" fa-solid fa-pen-to-square"></i><i
+                                    class="fa-solid fa-chevron-right"></i><span>Đổi mặt khẩu</span></a></button>
                     </li>
                     <li>
-                        <button type="button" onclick="" class = ""><a href ="#"><i class=" fa-solid fa-arrow-right-from-bracket"></i><i class="fa-solid fa-chevron-right"></i><span>Đăng xuất</span></a></button>
+                        <button type="button" onclick="" class=""><a href="#"><i
+                                    class=" fa-solid fa-arrow-right-from-bracket"></i><i
+                                    class="fa-solid fa-chevron-right"></i><span>Đăng xuất</span></a></button>
                     </li>
                 </ul>
+            </section>
         </section>
-    </section>
-    <script src="/Cựu SV/profile/chat.js"></script>
-    <main class="profile-body">
-        <section class="container">
-            <div class="flex-container">
-                <div class="left">
-                    <div class="ads">
-                        <img id="img" src="/Cựu SV/profile/img/sv1.1.jpg" onclick="changeImg()" alt="sv">
-                        <span>College Graduation Ceremony</span>
-                    </div>
-                </div>
-                <nav class="pro-body">
-                <div class="middle">
-                    <div class="edit-avt">
-                        <img class="avatar" src="/Cựu SV/profile/img/d-avatar.jpg" alt="avatar">
-                        <input type="file" id="avt-upload" accept="image/*" style="display: none;">
-                        <button type="button" title="Đổi hình nền" onclick="uploadAvt()"> Edit avatar <i class="fa-solid fa-wand-magic-sparkles"></i> </button>
-                    </div>
-                    <div class="info informa">
-                        <h2> <i class="fa-solid fa-circle-info" title="Thông tin cơ bản" ></i> General Information</h2>
-                        <div class="info-profile">
-                            <div class="pad-info">
-                                <i class="fa-solid fa-info"></i> <strong>Họ và tên:</strong> 
-                                <span class="editable-content" contenteditable></span>
-                            </div class="pad-info">
-                            <div class="pad-info">
-                                <i class="fa-solid fa-school"></i> <strong>Học tại:</strong> 
-                                <span class="editable-content" contenteditable></span>
-                            </div>
-                            <div class="pad-info">
-                                <i class="fa-solid fa-house"></i> <strong>Quê quán:</strong> 
-                                <span class="editable-content" contenteditable></span>
-                            </div>
-                            <div class="pad-info">
-                                <i class="fa-solid fa-briefcase"></i> <strong>Chuyên ngành:</strong> 
-                                <span class="editable-content" contenteditable></span>
-                            </div>
-                            <div class="pad-info">
-                                <i class="fa-solid fa-graduation-cap"></i> <strong>Tốt nghiệp:</strong> 
-                                <span class="editable-content" contenteditable></span>
-                            </div>
-                        </div>
-                        <div class="contacts">
-                            <div class="contact">
-                                <div class="pad-info">
-                                    <i class="fa-solid fa-envelope"></i><strong>Email:</strong>
-                                    <span class="editable-content" contenteditable></span>
-                                </div>
-                                <div class="pad-info">
-                                    <i class="fa-solid fa-phone"></i><strong>Phone:</strong>
-                                    <span class="editable-content" contenteditable></span>
-                                </div>
-                                <div class="pad-info">
-                                    <i class="fa-solid fa-location-pin"></i><strong>Address:</strong> 
-                                    <span class="editable-content" contenteditable></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="buttons">
-                            <button type="button" class="btn-edit" title="Chỉnh sửa thông tin" onclick="switchToEditMode()"> Edit mode <i class="fa-solid fa-pen-to-square"></i> </button>
-                            <button type="button" class="btn-edit" title="Chia sẻ" >Share <i class="fa-solid fa-share"></i> <title> Chia sẻ </title> </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="album">
-                    <h2 class="mid-h2">Albums <i class="fa-solid fa-image" title="Lưu trữ hình ảnh"></i> </h2>
-                    <div class="album-flex">
-                        <div class="img1">
-                            <input type="file" id="album-upload1" accept="image/*" style="display: none;">
-                            <img id="1" src="/Cựu SV/profile/img/no-image.png" alt="pic1" onclick="changeAlbumImage('1')">
-                        </div>
-                        <div>
-                            <ul class="img2">
-                                <div>
-                                    <input type="file" id="album-upload2" accept="image/*" style="display: none;">
-                                    <li> <img id="2" src="/Cựu SV/profile/img/no-image.png" alt="pic2" onclick="changeAlbumImage('2')"> </li>
-                                </div>
-                                <div>
-                                    <input type="file" id="album-upload3" accept="image/*" style="display: none;">
-                                    <li> <img id="3" src="/Cựu SV/profile/img/no-image.png" alt="pic3" onclick="changeAlbumImage('3')"> </li>
-                                </div>
-                                <div>
-                                    <input type="file" id="album-upload4" accept="image/*" style="display: none;">
-                                    <li> <img id="4" src="/Cựu SV/profile/img/no-image.png" alt="pic4" onclick="changeAlbumImage('4')"> </li>
-                                </div>
-                                <div>
-                                    <input type="file" id="album-upload5" accept="image/*" style="display: none;">
-                                    <li> <img id="5" src="/Cựu SV/profile/img/no-image.png" alt="pic5" onclick="changeAlbumImage('5')"> </li>
-                                </div>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="footer">
-                        <p>Lưu trữ hình ảnh <i class="fa-regular fa-image"></i>: Những kĩ niệm khó quên của bạn... </p>
-                    </div>
-                </div>
-                </nav>
-                <div class="right">
-                    <div class="chat-wrapper">
-                        <div class="friends-list">
-                            <h2>Friends list <img src="/Cựu SV/profile/img/f-lists.png" alt="friends"></h2>
-                            <ul class="friends">
-                                <li>
-                                    <div class="acc-friends">
-                                        <img src="/Cựu SV/profile/img/f-avatar.jpg" alt="">
-                                        <span class="friend-name">Mỹ Diệu</span>
-                                        <div class="sub-menu">
-                                            <ul>
-                                                <li class="name"> <strong>Name: </strong> </li>
-                                                <li class="school"> <strong>School:</strong> ĐH Mở</li>
-                                                <li class="status"> <strong>Status:</strong> <i class="fa-solid fa-circle" style="color: #00571e;"></i>Online</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="acc-friends">
-                                        <img src="/Cựu SV/profile/img/d-avatar.jpg" alt="">
-                                        <span class="friend-name">Bích Nụ</span>
-                                        <div class="sub-menu">
-                                            <ul>
-                                                <li class="name"> <strong>Name: </strong> </li>
-                                                <li class="school"> <strong>School:</strong> ĐH Mở</li>
-                                                <li class="status"> <strong>Status:</strong> <i class="fa-solid fa-circle" style="color: #00571e;"></i>Online</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="acc-friends">
-                                        <img src="/Cựu SV/profile/img/d-avatar.jpg" alt="">
-                                        <span class="friend-name">Trump</span>
-                                        <div class="sub-menu">
-                                            <ul>
-                                                <li class="name"> <strong>Name: </strong> </li>
-                                                <li class="school"> <strong>School:</strong> ĐH Mở</li>
-                                                <li class="status"> <strong>Status:</strong> <i class="fa-solid fa-circle" style="color: #fa0000;"></i>Offline</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="search-friends">
-                            <h2>Tìm kiếm bạn bè</h2>
-                            <input type="text" placeholder="Nhập tên bạn bè" id="searchInput">
-                            <button class="btn" onclick="searchFriends()">Tìm kiếm <i class="fa-solid fa-magnifying-glass"></i></button>
-                        </div>
-                </div>
-            </div>
-        </section>
-    </main>
-=======
-    <link rel="stylesheet" href="/Cuu_SV/Trang chủ/trangchu.css" />
-    <link rel="stylesheet" href="/Cuu_SV/Trang chủ/search.css" />
-    <link rel="stylesheet" href="/Cuu_SV/profile/chat.css">
-    <link rel="shortcut icon" href="/Cuu_SV/profile/img/logo.png">
-    <link rel="stylesheet" href="footer.css">
-    <script src="/Cuu_SV/Trang chủ/search.js"></script>
-    <title>Allumni</title>
-</head>
-
-<body id="body" onclick="closeall()">
-    <section class="header">
-        <section class="logo"><a href="#"><img src="/Cuu_SV/image/3.png" alt="logo" /></a></section>
-        <section>
-            <form class="search-form" action="/tim-kiem" method="get" id="search-box">
-                <button type="button" class="search-btn" onclick="focusInput()"><i
-                        class="fa-solid fa-magnifying-glass"></i></button>
-                <input class="search-text" type="text" placeholder="tìm kiếm trên Allumni">
-            </form>
-        </section>
-        <section class="choice">
-            <button onclick="openmenuheader();toggleArrow();" class="button-menu"><i id="chevron"
-                    class="fa-solid fa-chevron-down"></i></button>
-            <ul class="menu-header">
-                <li>
-                    <button type="button" onclick="" class=""><a
-                            href="http://127.0.0.1:5501/C%E1%BB%B1u%20SV/profile/profile.html"><i
-                                class="fa-solid fa-user"></i><i
-                                class="fa-solid fa-chevron-right"></i><span>Tôi</span></a></button>
-                </li>
-                <li>
-                    <button type="button" onclick="" class=""><a
-                            href="http://127.0.0.1:5501/DangNhap-DangKy/change.html"><i
-                                class=" fa-solid fa-pen-to-square"></i><i
-                                class="fa-solid fa-chevron-right"></i><span>Đổi mật khẩu</span></a></button>
-                </li>
-                <li>
-                    <button type="button" onclick="" class=""><a
-                            href="http://127.0.0.1:5501/DangNhap-DangKy/login.html"><i
-                                class=" fa-solid fa-arrow-right-from-bracket"></i><i
-                                class="fa-solid fa-chevron-right"></i><span>Đăng xuất</span></a></button>
-                </li>
-            </ul>
-        </section>
-    </section>
-    <script src="/Cuu_SV/profile/chat.js"></script>
-    <section class="pos-body">
+        <script src="/Cuu_SV/profile/chat.js"></script>
         <main class="profile-body">
             <section class="container">
                 <div class="flex-container">
@@ -251,7 +56,7 @@
                     <nav class="pro-body">
                         <div class="middle">
                             <div class="edit-avt">
-                                <img class="avatar" src="/Cuu_SV/profile/img/lover.jpg" alt="avatar">
+                                <img class="avatar" src="/Cuu_SV/profile/img/d-avatar.jpg" alt="avatar">
                                 <input type="file" id="avt-upload" accept="image/*" style="display: none;">
                                 <button type="button" title="Đổi hình nền" onclick="uploadAvt()"> Edit avatar <i
                                         class="fa-solid fa-wand-magic-sparkles"></i> </button>
@@ -344,10 +149,10 @@
                                         </div>
                                     </ul>
                                 </div>
-                                <div class="footer">
-                                    <p>Lưu trữ hình ảnh <i class="fa-regular fa-image"></i>: Những kĩ niệm khó quên của
-                                        bạn... </p>
-                                </div>
+                            </div>
+                            <div class="footer">
+                                <p>Lưu trữ hình ảnh <i class="fa-regular fa-image"></i>: Những kĩ niệm khó quên của
+                                    bạn... </p>
                             </div>
                         </div>
                     </nav>
@@ -411,24 +216,240 @@
                             </div>
                         </div>
                     </div>
-                </div>
             </section>
         </main>
-        <div class="space">
-            <div>
-                ...
-            </div>
-        </div>
-    </section>
-    <footer class="bottom">
-        <div title="Thông tin"><a href="#"><i class="fa-solid fa-newspaper"></i></a></div>
-        <div title="Bạn bè"><a href="#"><i class="fa-solid fa-user-group"></i></a></div>
-        <div title="Trang chủ"><a href="http://127.0.0.1:5501/C%E1%BB%B1u%20SV/Trang%20ch%E1%BB%A7/trangchu.html"><i
-                    class="fa-solid fa-house"></i></a></div>
-        <div title="Tìm việc"><a href="#"><i class="fa-solid fa-business-time"></i></a></div>
-        <div title="Cài đặt"><a href="#"><i class="fa-solid fa-gear"></i></a></div>
-    </footer>
->>>>>>> 9f9ca8ca1adc49fbfe63f7e9d98ce68bf4946a08
-</body>
+
+        <body id="body" onclick="closeall()">
+            <section class="header">
+                <section class="logo"><a href="#"><img src="/Cuu_SV/image/3.png" alt="logo" /></a></section>
+                <section>
+                    <form class="search-form" action="/tim-kiem" method="get" id="search-box">
+                        <button type="button" class="search-btn" onclick="focusInput()"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
+                        <input class="search-text" type="text" placeholder="tìm kiếm trên Allumni">
+                    </form>
+                </section>
+                <section class="choice">
+                    <button onclick="openmenuheader();toggleArrow();" class="button-menu"><i id="chevron"
+                            class="fa-solid fa-chevron-down"></i></button>
+                    <ul class="menu-header">
+                        <li>
+                            <button type="button" onclick="" class=""><a
+                                    href="http://127.0.0.1:5501/C%E1%BB%B1u%20SV/profile/profile.html"><i
+                                        class="fa-solid fa-user"></i><i
+                                        class="fa-solid fa-chevron-right"></i><span>Tôi</span></a></button>
+                        </li>
+                        <li>
+                            <button type="button" onclick="" class=""><a
+                                    href="http://127.0.0.1:5501/DangNhap-DangKy/change.html"><i
+                                        class=" fa-solid fa-pen-to-square"></i><i
+                                        class="fa-solid fa-chevron-right"></i><span>Đổi mật khẩu</span></a></button>
+                        </li>
+                        <li>
+                            <button type="button" onclick="" class=""><a
+                                    href="http://127.0.0.1:5501/DangNhap-DangKy/login.html"><i
+                                        class=" fa-solid fa-arrow-right-from-bracket"></i><i
+                                        class="fa-solid fa-chevron-right"></i><span>Đăng xuất</span></a></button>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+            <script src="/Cuu_SV/profile/chat.js"></script>
+            <section class="pos-body">
+                <main class="profile-body">
+                    <section class="container">
+                        <div class="flex-container">
+                            <div class="left">
+                                <div class="ads">
+                                    <img id="img" src="/Cuu_SV/profile/img/sv1.1.jpg" onclick="changeImg()" alt="sv">
+                                    <span>College Graduation Ceremony</span>
+                                </div>
+                            </div>
+                            <nav class="pro-body">
+                                <div class="middle">
+                                    <div class="edit-avt">
+                                        <img class="avatar" src="/Cuu_SV/profile/img/lover.jpg" alt="avatar">
+                                        <input type="file" id="avt-upload" accept="image/*" style="display: none;">
+                                        <button type="button" title="Đổi hình nền" onclick="uploadAvt()"> Edit avatar <i
+                                                class="fa-solid fa-wand-magic-sparkles"></i> </button>
+                                    </div>
+                                    <div class="info informa">
+                                        <h2> <i class="fa-solid fa-circle-info" title="Thông tin cơ bản"></i> General
+                                            Information</h2>
+                                        <div class="info-profile">
+                                            <div class="pad-info">
+                                                <i class="fa-solid fa-info"></i> <strong>Họ và tên:</strong>
+                                                <span class="editable-content" contenteditable></span>
+                                            </div class="pad-info">
+                                            <div class="pad-info">
+                                                <i class="fa-solid fa-school"></i> <strong>Học tại:</strong>
+                                                <span class="editable-content" contenteditable></span>
+                                            </div>
+                                            <div class="pad-info">
+                                                <i class="fa-solid fa-house"></i> <strong>Quê quán:</strong>
+                                                <span class="editable-content" contenteditable></span>
+                                            </div>
+                                            <div class="pad-info">
+                                                <i class="fa-solid fa-briefcase"></i> <strong>Chuyên ngành:</strong>
+                                                <span class="editable-content" contenteditable></span>
+                                            </div>
+                                            <div class="pad-info">
+                                                <i class="fa-solid fa-graduation-cap"></i> <strong>Tốt nghiệp:</strong>
+                                                <span class="editable-content" contenteditable></span>
+                                            </div>
+                                        </div>
+                                        <div class="contacts">
+                                            <div class="contact">
+                                                <div class="pad-info">
+                                                    <i class="fa-solid fa-envelope"></i><strong>Email:</strong>
+                                                    <span class="editable-content" contenteditable></span>
+                                                </div>
+                                                <div class="pad-info">
+                                                    <i class="fa-solid fa-phone"></i><strong>Phone:</strong>
+                                                    <span class="editable-content" contenteditable></span>
+                                                </div>
+                                                <div class="pad-info">
+                                                    <i class="fa-solid fa-location-pin"></i><strong>Address:</strong>
+                                                    <span class="editable-content" contenteditable></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="buttons">
+                                            <button type="button" class="btn-edit" title="Chỉnh sửa thông tin"
+                                                onclick="switchToEditMode()"> Edit mode <i
+                                                    class="fa-solid fa-pen-to-square"></i> </button>
+                                            <button type="button" class="btn-edit" title="Chia sẻ">Share <i
+                                                    class="fa-solid fa-share"></i>
+                                                <title> Chia sẻ </title>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="album">
+                                    <h2 class="mid-h2">Albums <i class="fa-solid fa-image" title="Lưu trữ hình ảnh"></i>
+                                    </h2>
+                                    <div class="album-flex">
+                                        <div class="img1">
+                                            <input type="file" id="album-upload1" accept="image/*"
+                                                style="display: none;">
+                                            <img id="1" src="/Cuu_SV/profile/img/no-image.png" alt="pic1"
+                                                onclick="changeAlbumImage('1')">
+                                        </div>
+                                        <div>
+                                            <ul class="img2">
+                                                <div>
+                                                    <input type="file" id="album-upload2" accept="image/*"
+                                                        style="display: none;">
+                                                    <li> <img id="2" src="/Cuu_SV/profile/img/no-image.png" alt="pic2"
+                                                            onclick="changeAlbumImage('2')"> </li>
+                                                </div>
+                                                <div>
+                                                    <input type="file" id="album-upload3" accept="image/*"
+                                                        style="display: none;">
+                                                    <li> <img id="3" src="/Cuu_SV/profile/img/no-image.png" alt="pic3"
+                                                            onclick="changeAlbumImage('3')"> </li>
+                                                </div>
+                                                <div>
+                                                    <input type="file" id="album-upload4" accept="image/*"
+                                                        style="display: none;">
+                                                    <li> <img id="4" src="/Cuu_SV/profile/img/no-image.png" alt="pic4"
+                                                            onclick="changeAlbumImage('4')"> </li>
+                                                </div>
+                                                <div>
+                                                    <input type="file" id="album-upload5" accept="image/*"
+                                                        style="display: none;">
+                                                    <li> <img id="5" src="/Cuu_SV/profile/img/no-image.png" alt="pic5"
+                                                            onclick="changeAlbumImage('5')"> </li>
+                                                </div>
+                                            </ul>
+                                        </div>
+                                        <div class="footer">
+                                            <p>Lưu trữ hình ảnh <i class="fa-regular fa-image"></i>: Những kĩ niệm khó
+                                                quên của
+                                                bạn... </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                            <div class="right">
+                                <div class="chat-wrapper">
+                                    <div class="friends-list">
+                                        <h2>Friends list <img src="/Cuu_SV/profile/img/f-lists.png" alt="friends"></h2>
+                                        <ul class="friends">
+                                            <li>
+                                                <div class="acc-friends">
+                                                    <img src="/Cuu_SV/profile/img/f-avatar.jpg" alt="">
+                                                    <span class="friend-name">Mỹ Diệu</span>
+                                                    <div class="sub-menu">
+                                                        <ul>
+                                                            <li class="name"> <strong>Name: </strong> </li>
+                                                            <li class="school"> <strong>School:</strong> ĐH Mở</li>
+                                                            <li class="status"> <strong>Status:</strong> <i
+                                                                    class="fa-solid fa-circle"
+                                                                    style="color: #00571e;"></i>Online</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="acc-friends">
+                                                    <img src="/Cuu_SV/profile/img/d-avatar.jpg" alt="">
+                                                    <span class="friend-name">Bích Nụ</span>
+                                                    <div class="sub-menu">
+                                                        <ul>
+                                                            <li class="name"> <strong>Name: </strong> </li>
+                                                            <li class="school"> <strong>School:</strong> ĐH Mở</li>
+                                                            <li class="status"> <strong>Status:</strong> <i
+                                                                    class="fa-solid fa-circle"
+                                                                    style="color: #00571e;"></i>Online</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="acc-friends">
+                                                    <img src="/Cuu_SV/profile/img/d-avatar.jpg" alt="">
+                                                    <span class="friend-name">Trump</span>
+                                                    <div class="sub-menu">
+                                                        <ul>
+                                                            <li class="name"> <strong>Name: </strong> </li>
+                                                            <li class="school"> <strong>School:</strong> ĐH Mở</li>
+                                                            <li class="status"> <strong>Status:</strong> <i
+                                                                    class="fa-solid fa-circle"
+                                                                    style="color: #fa0000;"></i>Offline</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="search-friends">
+                                        <h2>Tìm kiếm bạn bè</h2>
+                                        <input type="text" placeholder="Nhập tên bạn bè" id="searchInput">
+                                        <button class="btn" onclick="searchFriends()">Tìm kiếm <i
+                                                class="fa-solid fa-magnifying-glass"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+                <div class="space">
+                    <div>
+                        ...
+                    </div>
+                </div>
+            </section>
+            <footer class="bottom">
+                <div title="Thông tin"><a href="#"><i class="fa-solid fa-newspaper"></i></a></div>
+                <div title="Bạn bè"><a href="#"><i class="fa-solid fa-user-group"></i></a></div>
+                <div title="Trang chủ"><a
+                        href="http://127.0.0.1:5501/C%E1%BB%B1u%20SV/Trang%20ch%E1%BB%A7/trangchu.html"><i
+                            class="fa-solid fa-house"></i></a></div>
+                <div title="Tìm việc"><a href="#"><i class="fa-solid fa-business-time"></i></a></div>
+                <div title="Cài đặt"><a href="#"><i class="fa-solid fa-gear"></i></a></div>
+            </footer>
+
+        </body>
 
 </html>

@@ -29,6 +29,28 @@ function changeAds() {
 }
 setInterval(changeAds, 3000);
 
+function loadbusiness(){
+    fetch("/Cuu_SV/business/business.json")
+    .then(res => res.json())
+    .then(data => {
+        let h = "";
+        for (let c of data){
+            h +=  `
+            <li><a href="${c.href}" ><i class="fa-solid fa-angles-right" style="color: #ff0000;"></i>${c.content}</a></li>
+            `;
+        }
+
+        let e = document.getElementById("link");
+        if(h != null){
+            e.innerHTML += h;
+        }
+    });
+};
+
+window.onload = function(){
+    loadbusiness()
+};
+
 
 
 
