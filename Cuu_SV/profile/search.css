@@ -4,7 +4,6 @@ body {
     height: 2000px;
 }
 
-
 header {
     display: flex;
     position: fixed;
@@ -139,5 +138,7 @@ selection.choice .menu-header > li a {
     color: #000;
 } 
 
-
+.flipped {
+    transform: rotate(180deg);
+}
 

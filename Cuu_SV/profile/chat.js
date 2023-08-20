@@ -105,3 +105,15 @@ function searchFriends() {
         }
     });
 }
+
+var arrowIsFlipped = false;
+function toggleArrow() {
+    var arrowIcon = document.getElementById("chevron");
+    
+    if (arrowIsFlipped) {
+        arrowIcon.classList.remove("flipped");
+    } else {
+        arrowIcon.classList.add("flipped");
+    }
+    arrowIsFlipped = !arrowIsFlipped;
+}
