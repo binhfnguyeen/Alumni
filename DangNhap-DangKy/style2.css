@@ -118,3 +118,14 @@ div button.submit:hover {
     pointer-events: none;
 }
 
+@media screen and (max-width: 600px){
+    section.login{
+        width: auto;
+    }
+    nav{
+        width: auto;
+    }
+    nav > h1{
+        font-size: 10px;
+    }
+}

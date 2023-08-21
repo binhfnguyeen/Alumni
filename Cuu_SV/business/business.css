@@ -267,3 +267,59 @@ button.btn > img{
     opacity: 1;
     visibility: visible;
 }
+
+ul.right li img{
+    transform: scale(1);
+    transition: transform .8s;
+}
+
+ul.right li:hover img{
+    transform: scale(1.1);
+    transition: transform .5s;
+}
+
+div.banner img{
+    transform: scale(1);
+    transition: transform .8s;
+}
+
+div.banner:hover img{
+    transform: scale(1.05);
+    transition: transform .5s;
+}
+
+@media screen and (max-width: 400px){
+    img.pic1{
+        width: 30%;
+    }
+    img.pic2{
+        width: 50%;
+    }
+    div.network1 > a{
+        font-size: 10%;
+    }
+    div.network2 > p{
+        font-size: 10%;
+    }
+    ul.menus{
+        margin: 0 auto;
+    }
+    div.banner > img{
+        width: 100%;
+    }
+    main.body-ads{
+        width: 100%;
+    }
+    ul.right img{
+        width: 250px;
+    }
+    div.scroll-link a{
+        font-size: 10px;
+    }
+    footer.end{
+        width: 100%;
+    }
+    ul.nav-end a{
+        font-size: 50%;
+    }
+}

@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function() {
 //Tìm bạn bè
 function searchFriends() {
     const searchInput = document.getElementById("searchInput");
-    const friendList = document.querySelectorAll(".friends > li");
+    const friendList = document.querySelectorAll(".acc-friends");
     const searchText = searchInput.value.toLowerCase();
     friendList.forEach((friend) => {
         const friendName = friend.querySelector(".friend-name").textContent.toLowerCase();
