@@ -189,9 +189,12 @@ function commenting(button){
 }
 
 function gotowork(){
-    window.location.href = "/Cuu_SV/business/business.html";
+    window.open("/Cuu_SV/business/business.html", "_blank")
 }
 
+function openoualumni(){
+    window.open("https://www.bing.com/ck/a?!&&p=c4ff0f276b36a3eaJmltdHM9MTY5MjU3NjAwMCZpZ3VpZD0yMWEyMmRkNC1lMTU1LTZlOTItMDY5MS0zZmE1ZTAyYTZmY2EmaW5zaWQ9NTE4MQ&ptn=3&hsh=3&fclid=21a22dd4-e155-6e92-0691-3fa5e02a6fca&psq=alumi+ou&u=a1aHR0cDovL2FsdW1uaS5vdS5lZHUudm4v&ntb=1", "_blank")
+}
 // Hàm load post
 function loadpost(data) {
     // Implement loadpost here
@@ -339,10 +342,10 @@ document.addEventListener("DOMContentLoaded", async function onload() {
       button.style.display = "none";
     });
 
-    var allgotome= document.querySelectorAll(".gotome");
-        allgotome.forEach(click(), function (){
-        window.location.href="/Cuu_SV/profile/thongtin.html";
-    });
+    // var allgotome= document.querySelectorAll(".gotome");
+    //     allgotome.forEach(click(), function (){
+    //     window.location.href="/Cuu_SV/profile/thongtin.html";
+    // });
 
     ///comment
     var upcmt = document.querySelectorAll(".up-cmt");

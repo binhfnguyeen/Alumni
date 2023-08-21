@@ -238,6 +238,7 @@ button#btn-profile {
     padding: 10px;
     width: 110%;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 button#btn-profile:hover{
@@ -247,6 +248,9 @@ button#btn-profile:hover{
 .user-avt > i {
     padding: 3.5px 10px 3.5px 0px;
     font-size: 37px;
+}
+.user-name {
+    cursor: pointer ;
 }
 /* right 2 */
 
@@ -344,7 +348,6 @@ button#btn-profile:hover{
     width: 30%;
     border-radius: 10px;
 }
-
 
 
 /* @media screen and (max-width: 1380px) {
