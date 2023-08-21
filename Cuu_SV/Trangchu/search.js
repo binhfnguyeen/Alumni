@@ -339,6 +339,11 @@ document.addEventListener("DOMContentLoaded", async function onload() {
       button.style.display = "none";
     });
 
+    var allgotome= document.querySelectorAll(".gotome");
+        allgotome.forEach(click(), function (){
+        window.location.href="/Cuu_SV/profile/thongtin.html";
+    });
+
     ///comment
     var upcmt = document.querySelectorAll(".up-cmt");
     upcmt.forEach(function (button){

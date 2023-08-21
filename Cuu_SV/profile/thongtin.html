@@ -16,7 +16,11 @@
 <body>
     <!-- Thanh tìm kiếm -->
     <section class="header">
+<<<<<<< HEAD
         <section class="logo gotome"><a href="/Cuu_SV/Trangchu/trangchu.html"><img src="/Cuu_SV/image/3.png" alt="logo" /></a></section>
+=======
+        <section class="logo"><a href="#"><img src="/Cuu_SV/image/3.png" alt="logo" /></a></section>
+>>>>>>> ec8e363e54dccb33a5c33a970a4fa84d08727836
         <section>
             <form class="search-form" action="/tim-kiem" method="get" id="search-box">
                 <button type="button" class="search-btn" onclick="focusInput()"><i
@@ -24,24 +28,19 @@
                 <input class="search-text" type="text" placeholder="tìm kiếm trên Allumni">
             </form>
         </section>
-        <section class="choice">
-            <button type="button" onclick="openmenuheader()" class="button-menu"><i
-                    class="fa-solid fa-chevron-up"></i><i class="fa-solid fa-chevron-down"></i></button>
-            <ul class="menu-header">
-                <li>
-                    <button type="button" onclick="" class=""><a href="#"><i class="fa-regular fa-user"></i><i
-                                class="fa-solid fa-chevron-right"></i><span>Tôi</span></a></button>
-                </li>
-                <li>
-                    <button type="button" onclick="" class=""><a href="#"><i class=" fa-solid fa-pen-to-square"></i><i
-                                class="fa-solid fa-chevron-right"></i><span>Đổi mặt khẩu</span></a></button>
-                </li>
-                <li>
-                    <button type="button" onclick="" class=""><a href="#"><i
-                                class=" fa-solid fa-arrow-right-from-bracket"></i><i
-                                class="fa-solid fa-chevron-right"></i><span>Đăng xuất</span></a></button>
-                </li>
-            </ul>
+        <section class = "choice">
+            <button onclick="openmenuheader(); toggleArrow();" class = "button-menu"><i id="chevron" class="fa-solid fa-chevron-down"></i></button>
+                <ul class="menu-header">
+                    <li>
+                        <button type="button" onclick="" class = ""><a href="/Cuu_SV/profile/thongtin.html"><i class="fa-solid fa-user"></i><i class="fa-solid fa-chevron-right"></i><span>Tôi</span></a></button>
+                    </li>
+                    <li>
+                        <button type="button" onclick="" class = ""><a href="/DangNhap-DangKy/change.html"><i class=" fa-solid fa-pen-to-square"></i><i class="fa-solid fa-chevron-right"></i><span>Đổi mật khẩu</span></a></button>
+                    </li>
+                    <li>
+                        <button type="button" onclick="" class = ""><a href ="/DangNhap-DangKy/login.html"><i class=" fa-solid fa-arrow-right-from-bracket"></i><i class="fa-solid fa-chevron-right"></i><span>Đăng xuất</span></a></button>
+                    </li>
+                </ul>
         </section>
     </section>
     <!-- Thân profile -->
@@ -144,67 +143,8 @@
         <div class="column col3">
             <h5><p>Danh sách bạn bè</p><img src="/Cuu_SV/profile/img/f-lists.png" alt="friends"></h5>
             <div class="friends-list">
-                <ul class="friends">
-                    <li>
-                        <div class="acc-friends">
-                            <img src="/Cuu_SV/profile/img/f-avatar.jpg" alt="">
-                            <span class="friend-name">Mỹ Diệu</span>
-                            <div class="sub-menu">
-                                <ul>
-                                    <li class="name"> <strong>Name: </strong> </li>
-                                    <li class="school"> <strong>School:</strong> ĐH Mở</li>
-                                    <li class="status"> <strong>Status:</strong> <i
-                                            class="fa-solid fa-circle"
-                                            style="color: #00571e;"></i>Online</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="acc-friends">
-                            <img src="/Cuu_SV/profile/img/f-avatar.jpg" alt="">
-                            <span class="friend-name">Bích Nụ</span>
-                            <div class="sub-menu">
-                                <ul>
-                                    <li class="name"> <strong>Name: </strong> </li>
-                                    <li class="school"> <strong>School:</strong> ĐH Mở</li>
-                                    <li class="status"> <strong>Status:</strong> <i
-                                            class="fa-solid fa-circle"
-                                            style="color: #00571e;"></i>Online</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="acc-friends">
-                            <img src="/Cuu_SV/profile/img/f-avatar.jpg" alt="">
-                            <span class="friend-name">Cà Ná</span>
-                            <div class="sub-menu">
-                                <ul>
-                                    <li class="name"> <strong>Name: </strong> </li>
-                                    <li class="school"> <strong>School:</strong> ĐH Mở</li>
-                                    <li class="status"> <strong>Status:</strong> <i
-                                            class="fa-solid fa-circle"
-                                            style="color: #00571e;"></i>Online</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="acc-friends">
-                            <img src="/Cuu_SV/profile/img/f-avatar.jpg" alt="">
-                            <span class="friend-name">Trump</span>
-                            <div class="sub-menu">
-                                <ul>
-                                    <li class="name"> <strong>Name: </strong> </li>
-                                    <li class="school"> <strong>School:</strong> ĐH Mở</li>
-                                    <li class="status"> <strong>Status:</strong> <i
-                                            class="fa-solid fa-circle"
-                                            style="color: #00571e;"></i>Online</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
+                <ul class="friends" id="friends">
+                    
                 </ul>
             </div>
             <h5>Tìm kiếm bạn bè</h5>
@@ -217,8 +157,8 @@
     <footer class="bottom">
         <div title="Thông tin"><a href="#"><i class="fa-solid fa-newspaper"></i></a></div>
         <div title="Bạn bè"><a href="#"><i class="fa-solid fa-user-group"></i></a></div>
-        <div title="Trang chủ"><a href="#"><i class="fa-solid fa-house"></i></a></div>
-        <div title="Tìm việc"><a href="#"><i class="fa-solid fa-business-time"></i></a></div>
+        <div title="Trang chủ"><a href="/Cuu_SV/Trangchu/trangchu.html"><i class="fa-solid fa-house"></i></a></div>
+        <div title="Tìm việc"><a href="/Cuu_SV/business/business.html"><i class="fa-solid fa-business-time"></i></a></div>
         <div title="Cài đặt"><a href="#"><i class="fa-solid fa-gear"></i></a></div>
     </footer>
 </body>

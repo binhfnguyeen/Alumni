@@ -76,18 +76,6 @@ function switchToEditMode(){
     }
 }
 
-//Copy tên từ span.friend-name đặt vào li.name
-document.addEventListener("DOMContentLoaded", function() {
-    const friendItems = document.querySelectorAll(".friends > li");
-    friendItems.forEach(function(item) {
-        const span = item.querySelector(".friend-name");
-        const name = span.textContent;
-        const menuName = item.querySelector(".sub-menu li.name");
-        menuName.innerHTML = "<strong>Name: </strong>" + name;
-    });
-});
-
-
 //Tìm bạn bè
 function searchFriends() {
     const searchInput = document.getElementById("searchInput");
@@ -106,14 +94,38 @@ function searchFriends() {
     });
 }
 
-var arrowIsFlipped = false;
-function toggleArrow() {
-    var arrowIcon = document.getElementById("chevron");
-    
-    if (arrowIsFlipped) {
-        arrowIcon.classList.remove("flipped");
-    } else {
-        arrowIcon.classList.add("flipped");
-    }
-    arrowIsFlipped = !arrowIsFlipped;
-}
+function loadfriends(){
+    fetch("/Cuu_SV/profile/friends.json")
+    .then(res => res.json())
+    .then(data => {
+        let h = "";
+        for (let c of data){
+            h +=  `
+            <li>
+                        <div class="acc-friends">
+                            <img src="${c.pic}" alt="">
+                            <span class="friend-name">${c.name}</span>
+                            <div class="sub-menu">
+                                <ul>
+                                    <li class="name"> <strong>Name: </strong>${c.name}</li>
+                                    <li class="school"> <strong>Major:</strong> ${c.major}</li>
+                                    <li class="status"> <strong>Status:</strong> <i
+                                            class="fa-solid fa-circle"
+                                            style="color: #00571e;"></i>Online</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+            `;
+        }
+
+        let e = document.getElementById("friends");
+        if(h != null){
+            e.innerHTML += h;
+        }
+    });
+};
+
+window.onload = function(){
+    loadfriends();
+};
