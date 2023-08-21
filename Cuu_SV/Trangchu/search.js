@@ -242,8 +242,9 @@ function loadpost(data) {
         }
 }
 
+
 // Đợi DOMContentLoaded trước khi thực thi
-document.addEventListener("DOMContentLoaded", async function() {
+document.addEventListener("DOMContentLoaded", async function onload() {
     // Load data from JSON files
     const addsData = await loadDataFromJSON("/Cuu_SV/Trangchu/adds.json");
     const businessData = await loadDataFromJSON("/Cuu_SV/Trangchu/business.json");
@@ -288,5 +289,66 @@ document.addEventListener("DOMContentLoaded", async function() {
     menu.style.display = "none";
     cmt.forEach(function(button) {
       button.style.display = "none";
-    })
+    });
+
+
+    var postbtn = document.getElementById("post-btn");
+    let result = document.getElementById("posting");
+    postbtn.addEventListener("click", function(){
+        let data = document.getElementById("post-content").value;
+        let formattedValue = data.replace(/\n/g, "<br>");
+        let text = formattedValue;
+        if(text != ""){
+        let a ="";
+        //cộng thêm bài póst vào
+        a+= `
+        <div class ="post">
+        <div class = "user">
+            <div class = "user-avt"><img src="/Cuu_SV/Trangchu/lover.jpg" alt="adds"></div>
+            <div class = "name-time">
+                <div class = "user-name"><span>Minh Trí</span></div>
+                <div class= " post-time"><span>1p trước</span></div>
+            </div>
+        </div>
+        
+        <div class ="post-value">
+            <p class = "paragrap-post"> 
+                ${text}
+            </p>
+        </div>
+
+        <div class ="interact-val">
+            <div> 0 thích</div> 
+            <div> 0 bình luận</div>
+        </div>
+
+        <div class= "btn-interact">
+            <button type="button" class="btn-like"><i class="fa-regular fa-heart"></i><span>Yêu thích</span></button>
+            <button type="button" class ="btn-comment"><i class="fa-regular fa-comment"></i><span>Bình luận</span></button>
+        </div>
+
+        <div class ="cmt-container">
+        </div>
+        <div class ="cmt-active">
+            <div class="cmt-enter">
+                <div class = "user-avt"><img src="/Cuu_SV/Trangchu/lover.jpg" alt="adds"></div>
+                <div class = "write-cmt ">
+                    <textarea id="cmt-info" type="text" placeholder="Nhập bình luận của bạn..."></textarea>
+                    <div class="cmt-options">
+                        <ul>
+                            <li><i class="fa-regular fa-image"></i></li>
+                            <li><i class="fa-regular fa-face-smile"></i></li>
+                            <li><i class="fa-solid fa-paper-plane"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+        `;
+        result.insertAdjacentHTML("afterend", a);
+        onload();
+    }
+    });
 });
