@@ -1,18 +1,43 @@
 
 [
     {
-        "tieude":"HÌNH KỶ YẾU SINH VIÊN KHÓA 2018 CỦA TRƯỜNG ĐẠI HỌC MỞ THÀNH PHỐ HỒ CHÍ MINH",
+        "tieude":"HÌNH KỶ YẾU SINH VIÊN KHÓA 2018 CỦA OPEN UNIVERCITY",
         "diachi":"http://alumni.ou.edu.vn/news/hinh-ky-yeu-sinh-vien-khoa-2018-cua-truong-dai-hoc-mo-thanh-pho-ho-chi-minh-111.html",
         "anh":"adds0.jpg"
-        },
-     {
-        "title":"ĐIỂM TIN THÁNG 7-8/2023 TRƯỜNG ĐẠI HỌC MỞ THÀNH PHỐ HỒ CHÍ MINH",
-        "href":"http://alumni.ou.edu.vn/news/diem-tin-thang-7-8-2023-truong-dai-hoc-mo-thanh-pho-ho-chi-minh-109.html",
-         "img":"adds2.jpg"
-},
+    },
     {
-        "title":"ĐIỂM TIN THÁNG 6-7/2023 TRƯỜNG ĐẠI HỌC MỞ THÀNH PHỐ HỒ CHÍ MINH",
-        "href":"http://alumni.ou.edu.vn/news/diem-tin-thang-6-7-2023-truong-dai-hoc-mo-thanh-pho-ho-chi-minh-108.html",
-        "img":"adds3.jpg"
+        "tieude":"ĐIỂM TIN NGÀY 7-8/2023 OPEN UNIVERCITY",
+        "diachi":"http://alumni.ou.edu.vn/news/diem-tin-thang-7-8-2023-truong-dai-hoc-mo-thanh-pho-ho-chi-minh-109.html",
+         "anh":"adds1.jpg"
+    },
+    {
+        "tieude":"ĐIỂM TIN NGÀY 6-7/2023 OPEN UNIVERCITY",
+        "diachi":"http://alumni.ou.edu.vn/news/diem-tin-thang-6-7-2023-truong-dai-hoc-mo-thanh-pho-ho-chi-minh-108.html",
+        "anh":"adds2.jpg"
+    },
+    {
+        "tieude":"ĐIỂM TIN NGÀY 5-6/2023 OPEN UNIVERCITY",
+        "diachi":"http://alumni.ou.edu.vn/news/diem-tin-thang-5-6-2023-truong-dai-hoc-mo-thanh-pho-ho-chi-minh-107.html",
+        "anh":"adds3.jpg"
+    },
+    {
+        "tieude":"ĐIỂM TIN NGÀY 4-5/2023 OPEN UNIVERCITY",
+        "diachi":"http://alumni.ou.edu.vn/news/diem-tin-thang-4-5-2023-truong-dai-hoc-mo-thanh-pho-ho-chi-minh-106.html",
+        "anh":"adds4.jpg"
+    },
+    {
+        "tieude":"BẢN TIN NGÀY 2-3/2023 - OPEN UNIVERCITY",
+        "diachi":"http://alumni.ou.edu.vn/news/ban-tin-thang-2-3-2023-truong-dai-hoc-mo-thanh-pho-ho-chi-minh-105.html",
+        "anh":"adds5.jpg"
+    },
+    {
+        "tieude":"SỨ MẠNG TẦM NHÌN - GIÁ TRỊ CỐT LÕI - TRIẾT LÝ GIÁO DỤC CỦA OPEN UNIVERCITY",
+        "diachi":"http://alumni.ou.edu.vn/news/su-mang-tam-nhin-gia-tri-cot-loi-triet-ly-giao-duc-cua-truong-dai-hoc-mo-thanh-pho-ho-chi-minh-104.html",
+        "anh":"adds1.jpg"
+    },
+    {
+        "tieude":"BẢN TIN THÁNG 01 NĂM 2023 - OPEN UNIVERCITY",
+        "diachi":"http://alumni.ou.edu.vn/news/ban-tin-thang-01-nam-2023-truong-dai-hoc-mo-tp-hcm-103.html",
+        "anh":"adds7.jpg"
     }
 ]
