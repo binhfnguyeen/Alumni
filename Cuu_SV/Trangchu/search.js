@@ -53,6 +53,7 @@ function showcmt(button) {
 
 function interractshow(button) {
     var interactContainer = button.closest(".btn-interact");
+
     if (interactContainer.classList.contains("btn-interact-active")) {
         interactContainer.classList.remove("btn-interact-active");
     } else {
@@ -160,6 +161,32 @@ function loadbusiness(data) {
     }
 }
 
+function commenting(button){
+    let place = button.closest(".cmt-active");
+    let place2 = place.querySelector(".cmt-info");
+    let data = place2.value;
+    console.log(data);
+    if (data != ""){
+        let formattedValue = data.replace(/\n/g, "<br>");
+        let cmtcontainer = place.previousElementSibling;
+        let text = formattedValue;
+        let a = "";
+        //nọi dung cmt
+        a += 
+       `<div class="comment">
+        <div class = "user-avt"><img src="/Cuu_SV/Trangchu/lover.jpg" alt="adds"></div>
+        <div class = "cmt-info">
+                <div class = "cmt-name"><span>Trí Minh</span></div>   
+                <div class="cmt-value">
+                    ${text}
+                </div>
+                <button class="btn-cmt-like"><i class="fa-regular fa-heart"></i></button>
+        </div>
+        </div>`;
+        cmtcontainer.insertAdjacentHTML("beforeend",a);
+    }
+}
+
 // Hàm load post
 function loadpost(data) {
     // Implement loadpost here
@@ -197,7 +224,7 @@ function loadpost(data) {
                 <button type="button" class ="btn-comment"><i class="fa-regular fa-comment"></i><span>Bình luận</span></button>
             </div>
 
-            <div class ="cmt-container">`
+            <div class ="cmt-container" id = "cmt-container">`
             
             for(let i of c.cmt ){
                 h+=                 
@@ -219,18 +246,17 @@ function loadpost(data) {
                 <div class="cmt-enter">
                     <div class = "user-avt"><img src="/Cuu_SV/Trangchu/lover.jpg" alt="adds"></div>
                     <div class = "write-cmt ">
-                        <textarea id="cmt-info" type="text" placeholder="Nhập bình luận của bạn..."></textarea>
+                        <textarea id="cmt-info" class ="cmt-info" type="text" placeholder="Nhập bình luận của bạn..."></textarea>
                         <div class="cmt-options">
                             <ul>
                                 <li><i class="fa-regular fa-image"></i></li>
                                 <li><i class="fa-regular fa-face-smile"></i></li>
-                                <li><i class="fa-solid fa-paper-plane"></i></li>
+                                <li class = "up-cmt"><i class="fa-solid fa-paper-plane"></i></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
             `
  
@@ -257,13 +283,18 @@ document.addEventListener("DOMContentLoaded", async function onload() {
 
     // ... Các xử lý khác của bạn ở đây
     var cmtwrite = document.querySelectorAll(".cmt-active");
-    cmtwrite.forEach(function(button) {
-    button.style.display = "none";
+        cmtwrite.forEach(function(button) {
+        button.style.display = "none";
     })
 
     var likeButtons = document.querySelectorAll(".btn-like");
     var cmtLike = document.querySelectorAll(".btn-cmt-like");
     var cmt = document.querySelectorAll(".btn-comment");
+    var interact = document.querySelectorAll(".btn-interact");
+    interact.forEach(function(button){
+        button.classList.remove("btn-interact-active");
+    });
+
     likeButtons.forEach(function(button) {
         button.addEventListener("click", function() {
             likePost(this);
@@ -285,12 +316,22 @@ document.addEventListener("DOMContentLoaded", async function onload() {
     });
         //ẩn cmt
     var menu = document.querySelector(".menu-header");
-    var cmt = document.querySelectorAll(".cmt-container");
     menu.style.display = "none";
+
+    var cmt = document.querySelectorAll(".cmt-container");
     cmt.forEach(function(button) {
       button.style.display = "none";
     });
 
+    ///comment
+    var upcmt = document.querySelectorAll(".up-cmt");
+    upcmt.forEach(function (button){
+        button.addEventListener("click", function(){
+            commenting(this);
+        });
+    }); 
+    
+    ///post bài viết
 
     var postbtn = document.getElementById("post-btn");
     let result = document.getElementById("posting");
@@ -327,28 +368,29 @@ document.addEventListener("DOMContentLoaded", async function onload() {
             <button type="button" class ="btn-comment"><i class="fa-regular fa-comment"></i><span>Bình luận</span></button>
         </div>
 
-        <div class ="cmt-container">
+        <div class ="cmt-container" id = "cmt-container">
         </div>
         <div class ="cmt-active">
             <div class="cmt-enter">
                 <div class = "user-avt"><img src="/Cuu_SV/Trangchu/lover.jpg" alt="adds"></div>
                 <div class = "write-cmt ">
-                    <textarea id="cmt-info" type="text" placeholder="Nhập bình luận của bạn..."></textarea>
+                    <textarea id="cmt-info" class ="cmt-info" type="text" placeholder="Nhập bình luận của bạn..."></textarea>
                     <div class="cmt-options">
                         <ul>
                             <li><i class="fa-regular fa-image"></i></li>
                             <li><i class="fa-regular fa-face-smile"></i></li>
-                            <li><i class="fa-solid fa-paper-plane"></i></li>
+                            <li class = "up-cmt"><i class="fa-solid fa-paper-plane"></i></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
 
-    </div>
-        `;
+    </div>`;
         result.insertAdjacentHTML("afterend", a);
         onload();
     }
     });
+
 });
+
