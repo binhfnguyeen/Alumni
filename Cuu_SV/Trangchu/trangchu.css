@@ -59,18 +59,6 @@ form.search-form:hover {
     background-color: rgb(192, 192, 192, 0.4);
 }
 
-/* @media screen and (max-width: 700px) {
-    .search-form {
-        justify-content: center;
-    }
-    .search-text {
-        display: none;
-    }
-    .search-btn {
-        display: block;
-    }
-} */
-
 /* menu nho goc tren ben phai */
 section .button-menu {
     cursor: pointer;

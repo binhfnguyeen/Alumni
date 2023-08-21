@@ -72,6 +72,11 @@ function cmtentershow(button) {
 
     }
 }
+
+// var allgotome= document.querySelectorAll(".gotome");
+// allgotome.forEach(click(), function (){
+
+// });
 //tạo hịu ứng cho thanh add ảnh chạy bên phải
 document.addEventListener("DOMContentLoaded", function() {
     let list = document.querySelector('.colum-right-2 .slider-1 .list');
