@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="/Cuu_SV/Trangchu/trangchu.css"/>
-    <link rel="stylesheet" href="/Cuu_SV/Trangchu/search.css"/>
+    <link rel="stylesheet" href="/Cuu_SV/Trangchu/trangchu.css">
     <script src="/Cuu_SV/Trangchu/search.js"></script> 
     <title>Allumni</title>
 </head>
 
 <section class = "header">
-    <section class="logo"><a href="#"><img src="/Cuu_SV/image/3.png" alt="logo"/></a></section>
+    <section class="logo"><a href="/Cuu_SV/Trangchu/trangchu.html"><img src="/Cuu_SV/image/3.png" alt="logo"/></a></section>
     <section>
-        <form class="search-form" action="/tim-kiem" method="get" id="search-box">
+        <form class="search-form" action="" method="get" id="search-box">
             <button type = "button" class="search-btn" onclick="focusInput()"><i class="fa-solid fa-magnifying-glass"></i></button>
             <input class ="search-text" type="text" placeholder="tìm kiếm trên Allumni" >
         </form>
@@ -25,7 +24,7 @@
                     <button type="button" ><a href="/Cuu_SV/profile/thongtin.html"><i class="fa-solid fa-user"></i><i class="fa-solid fa-chevron-right"></i><span>Tôi</span></a></button>
                 </li>
                 <li>
-                    <button type="button"><a href="/DangNhap-DangKy/change.html"><i class=" fa-solid fa-pen-to-square"></i><i class="fa-solid fa-chevron-right"></i><span>Đổi mặt khẩu</span></a></button>
+                    <button type="button"><a href="/DangNhap-DangKy/change.html"><i class=" fa-solid fa-pen-to-square"></i><i class="fa-solid fa-chevron-right"></i><span>Đổi mật khẩu</span></a></button>
                 </li>
                 <li>
                     <button type="button"><a href ="/DangNhap-DangKy/login.html"><i class=" fa-solid fa-arrow-right-from-bracket"></i><i class="fa-solid fa-chevron-right"></i><span>Đăng xuất</span></a></button>
@@ -38,18 +37,18 @@
     <div class ="colum-right">
         <ul class="user-profile">
             <li>
-                <button type="button" id="btn-profile">
+                <button type="button" class="gotome" id="btn-profile">
                     <div class = "user">
-                        <div class = "user-avt gotome"><img src="/Cuu_SV/Trangchu/lover.jpg"></div>
-                        <div class = "user-name"><span>Trí Minh</span></div>
+                        <div class = "user-avt"><img src="/Cuu_SV/Trangchu/lover.jpg"></div>
+                        <div class = "user-name "><span>Trí Minh</span></div>
                     </div>
                 </button>
             </li>
             <li>
-                <button type="button" id="btn-profile">
+                <button type="button work" onclick="gotowork()" id="btn-profile">
                     <div class = "user">
-                        <div class = "user-avt " ><i class="fa-solid fa-envelope"></i></div>
-                        <div class = "user-name"><span>Mail for us</span></div>
+                        <div class = "user-avt " ><i class="fa-solid fa-briefcase"></i></div>
+                        <div class = "user-name"><span>Việc Làm</span></div>
                     </div>
                 </button>
             </li>
@@ -64,22 +63,22 @@
         <div class = "slider slider-1">
             <div class="list">
                 <div class = "item">
-                    <a href="#"><img class="banner" id="banner-1" src="/Cuu_SV/image/sv1.1.jpg" alt="banner"></a>
+                    <a href="#" target="_blank"><img class="banner" id="banner-1" src="/Cuu_SV/image/sv1.1.jpg" alt="banner"></a>
                 </div>
                 <div class = "item">
-                    <a href="#"><img class="banner" id="banner-1" src="/Cuu_SV/image/sv1.2.jpg" alt="banner"></a>
+                    <a href="#" target="_blank"><img class="banner" id="banner-1" src="/Cuu_SV/image/sv1.2.jpg" alt="banner"></a>
                 </div>
                 <div class = "item">
-                    <a href="#"><img class="banner" id="banner-1" src="/Cuu_SV/image/sv1.3.jpg" alt="banner"></a>
+                    <a href="#" target="_blank"><img class="banner" id="banner-1" src="/Cuu_SV/image/sv1.3.jpg" alt="banner"></a>
                 </div>
                 <div class = "item">
-                    <a href="#"><img class="banner" id="banner-1" src="/Cuu_SV/image/sv1.4.jpg" alt="banner"></a>
+                    <a href="#" target="_blank"><img class="banner" id="banner-1" src="/Cuu_SV/image/sv1.4.jpg" alt="banner"></a>
                 </div>
                 <div class = "item">
-                    <a href="#"><img class="banner" id="banner-1" src="/Cuu_SV/image/sv1.5.jpg" alt="banner"></a>
+                    <a href="#" target="_blank" ><img class="banner" id="banner-1" src="/Cuu_SV/image/sv1.5.jpg" alt="banner"></a>
                 </div>
                 <div class = "item">
-                    <a href="#"><img class="banner" id="banner-1" src="/Cuu_SV/image/sv1.6.jpg" alt="banner"></a>
+                    <a href="#" target="_blank"><img class="banner" id="banner-1" src="/Cuu_SV/image/sv1.6.jpg" alt="banner"></a>
                 </div>
             </div>
         </div>
@@ -87,22 +86,22 @@
         <div class = "slider slider-2">
             <div class="list">
                 <div class = "item">
-                    <a href="#"><img class="banner" id="banner-1" src="/Cuu_SV/image/dai-hoc-thanh-hoa-8-1.jpg" alt="banner"></a>
+                    <a href="#" target="_blank"><img class="banner" id="banner-1" src="/Cuu_SV/image/dai-hoc-thanh-hoa-8-1.jpg" alt="banner"></a>
                 </div>
                 <div class = "item">
-                    <a href="#"><img class="banner" id="banner-1" src="/Cuu_SV/image/dai-hoc-thanh-hoa-8-2.jpg" alt="banner"></a>
+                    <a href="#" target="_blank"><img class="banner" id="banner-1" src="/Cuu_SV/image/dai-hoc-thanh-hoa-8-2.jpg" alt="banner"></a>
                 </div>
                 <div class = "item">
-                    <a href="#"><img class="banner" id="banner-1" src="/Cuu_SV/image/dai-hoc-thanh-hoa-8-3.jpg" alt="banner"></a>
+                    <a href="#" target="_blank"><img class="banner" id="banner-1" src="/Cuu_SV/image/dai-hoc-thanh-hoa-8-3.jpg" alt="banner"></a>
                 </div>
                 <div class = "item">
-                    <a href="#"><img class="banner" id="banner-1" src="/Cuu_SV/image/dai-hoc-thanh-hoa-8-4.jpg" alt="banner"></a>
+                    <a href="#" target="_blank"><img class="banner" id="banner-1" src="/Cuu_SV/image/dai-hoc-thanh-hoa-8-4.jpg" alt="banner"></a>
                 </div>
                 <div class = "item">
-                    <a href="#"><img class="banner" id="banner-1" src="/Cuu_SV/image/dai-hoc-thanh-hoa-8-5.jpg" alt="banner"></a>
+                    <a href="#" target="_blank"><img class="banner" id="banner-1" src="/Cuu_SV/image/dai-hoc-thanh-hoa-8-5.jpg" alt="banner"></a>
                 </div>
                 <div class = "item">
-                    <a href="#"><img class="banner" id="banner-1" src="/Cuu_SV/image/dai-hoc-thanh-hoa-8-6.jpg" alt="banner"></a>
+                    <a href="#" target="_blank"><img class="banner" id="banner-1" src="/Cuu_SV/image/dai-hoc-thanh-hoa-8-6.jpg" alt="banner"></a>
                 </div>
             </div>
         </div>
@@ -117,8 +116,8 @@
     <div class="post-container" id="post-container">
         <div class="post" id="posting">
             <div class = "user">
-                <div class = "user-avt"><img src="/Cuu_SV/Trangchu/lover.jpg"></div>
-                <div class = "user-name"><span>Trí Minh</span></div>
+                <div class = "user-avt gotome"><img src="/Cuu_SV/Trangchu/lover.jpg"></div>
+                <div class = "user-name gotome"><span>Trí Minh</span></div>
             </div>
             <div class = "post-form">
                 <textarea id="post-content" placeholder="Nhập nội dung bài viết..."></textarea>

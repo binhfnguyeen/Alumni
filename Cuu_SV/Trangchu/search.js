@@ -1,7 +1,6 @@
 function focusInput() {
     var input = document.querySelector(".search-text");
     input.focus(); // Tập trung vào ô nhập liệu khi nút được nhấp
-    
 }
 
 
@@ -73,10 +72,7 @@ function cmtentershow(button) {
     }
 }
 
-// var allgotome= document.querySelectorAll(".gotome");
-// allgotome.forEach(click(), function (){
 
-// });
 //tạo hịu ứng cho thanh add ảnh chạy bên phải
 document.addEventListener("DOMContentLoaded", function() {
     let list = document.querySelector('.colum-right-2 .slider-1 .list');
@@ -132,7 +128,7 @@ function loadadds(data) {
         for (let c of data){
             h +=  `
             <div class ="adds">
-                <a href="${c.diachi}" >
+                <a href="${c.diachi}" target="_blank">
                     <span>${c.tieude}</span>
                     <img class ="img-add" src="/Cuu_SV/image/adds/${c.anh}"> 
                 </a>
@@ -153,7 +149,7 @@ function loadbusiness(data) {
     for (let c of data){
         h +=  `
         <div class ="adds">
-            <a href="${c.diachi}" >
+            <a href="${c.diachi}" target="_blank">
                 <img class ="img-add" src="/Cuu_SV/business_img/${c.anh}.jpg"> 
             </a>
         </div>`
@@ -179,9 +175,9 @@ function commenting(button){
         //nọi dung cmt
         a += 
        `<div class="comment">
-        <div class = "user-avt"><img src="/Cuu_SV/Trangchu/lover.jpg" alt="adds"></div>
+        <div class = "user-avt gotome"><img src="/Cuu_SV/Trangchu/lover.jpg" alt="adds"></div>
         <div class = "cmt-info">
-                <div class = "cmt-name"><span>Trí Minh</span></div>   
+                <div class = "cmt-name gotome"><span>Trí Minh</span></div>   
                 <div class="cmt-value">
                     ${text}
                 </div>
@@ -190,6 +186,10 @@ function commenting(button){
         </div>`;
         cmtcontainer.insertAdjacentHTML("beforeend",a);
     }
+}
+
+function gotowork(){
+    window.location.href = "/Cuu_SV/business/business.html";
 }
 
 // Hàm load post
@@ -264,7 +264,6 @@ function loadpost(data) {
             </div>
         </div>
             `
- 
         };
 
         let e = document.getElementById("post-container");
@@ -287,14 +286,26 @@ document.addEventListener("DOMContentLoaded", async function onload() {
     loadpost(postData);
 
     // ... Các xử lý khác của bạn ở đây
+    // phần 
     var cmtwrite = document.querySelectorAll(".cmt-active");
         cmtwrite.forEach(function(button) {
         button.style.display = "none";
-    })
+    });
+// hàm goto
+    var allgotome = document.querySelectorAll(".gotome");
+    allgotome.forEach( function (button){
+        button.addEventListener("click", function(){
+        window.location.href = "/Cuu_SV/profile/thongtin.html";
+        });
+    });
+////
+    var header_btn = document.querySelector(".menu-header");
+    header_btn.style.display = "none";
 
     var likeButtons = document.querySelectorAll(".btn-like");
     var cmtLike = document.querySelectorAll(".btn-cmt-like");
     var cmt = document.querySelectorAll(".btn-comment");
+
     var interact = document.querySelectorAll(".btn-interact");
     interact.forEach(function(button){
         button.classList.remove("btn-interact-active");
@@ -320,8 +331,8 @@ document.addEventListener("DOMContentLoaded", async function onload() {
         });
     });
         //ẩn cmt
-    var menu = document.querySelector(".menu-header");
-    menu.style.display = "none";
+    var menu_header = document.querySelector(".menu-header");
+    menu_header.style.display = "none";
 
     var cmt = document.querySelectorAll(".cmt-container");
     cmt.forEach(function(button) {
@@ -333,6 +344,12 @@ document.addEventListener("DOMContentLoaded", async function onload() {
     upcmt.forEach(function (button){
         button.addEventListener("click", function(){
             commenting(this);
+            var cmtLike = document.querySelectorAll(".btn-cmt-like");
+            cmtLike.forEach(function(button) {
+                button.addEventListener("click", function() {
+                    likePost(this);
+                });
+            });
         });
     }); 
     
@@ -350,9 +367,9 @@ document.addEventListener("DOMContentLoaded", async function onload() {
         a+= `
         <div class ="post">
         <div class = "user">
-            <div class = "user-avt"><img src="/Cuu_SV/Trangchu/lover.jpg" alt="adds"></div>
+            <div class = "user-avt gotome"><img src="/Cuu_SV/Trangchu/lover.jpg" alt="adds"></div>
             <div class = "name-time">
-                <div class = "user-name"><span>Minh Trí</span></div>
+                <div class = "user-name gotome" ><span>Minh Trí</span></div>
                 <div class= " post-time"><span>1p trước</span></div>
             </div>
         </div>
@@ -377,7 +394,7 @@ document.addEventListener("DOMContentLoaded", async function onload() {
         </div>
         <div class ="cmt-active">
             <div class="cmt-enter">
-                <div class = "user-avt"><img src="/Cuu_SV/Trangchu/lover.jpg" alt="adds"></div>
+                <div class = "user-avt gotome"><img src="/Cuu_SV/Trangchu/lover.jpg" alt="adds"></div>
                 <div class = "write-cmt ">
                     <textarea id="cmt-info" class ="cmt-info" type="text" placeholder="Nhập bình luận của bạn..."></textarea>
                     <div class="cmt-options">
