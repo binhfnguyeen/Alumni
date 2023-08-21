@@ -9,7 +9,7 @@ function login() {
 
             if (user) {
                 alert("Đăng nhập thành công!");
-                window.location.href = "http://127.0.0.1:5501/C%E1%BB%B1u%20SV/Trang%20ch%E1%BB%A7/trangchu.html";
+                window.location.href = "/Cuu_SV/Trangchu/trangchu.html";
                 return false;
             } else {
                 alert("Tên đăng nhập hoặc mật khẩu không đúng. Vui lòng thử lại.");

@@ -2,7 +2,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: lightgray;
+    background-color: whitesmoke;
 }
 
 
@@ -63,7 +63,7 @@ section .button-menu {
 
 section.choice .menu-header{
     list-style: none;
-    padding: 60px; 
+    padding: 30px; 
     position: absolute;
     right: 10px;
     background-color: white;
@@ -192,6 +192,10 @@ textarea#post-content {
 .container{
     position: relative;
     top: 200px;
+}
+
+.flipped {
+    transform: rotate(180deg);
 }
 
 .column {
@@ -577,7 +581,7 @@ div.sub-menu{
     background-color: lightcoral;
     box-shadow: 1px 1px 5px rgb(140, 138, 138, 0.5);
     border-radius: 10px;
-    font-size: 10px;
+    font-size: 8px;
     height: 100%;
     width: 80%;
     opacity: 0;

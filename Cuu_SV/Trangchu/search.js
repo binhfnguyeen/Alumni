@@ -73,10 +73,7 @@ function cmtentershow(button) {
     }
 }
 
-// var allgotome= document.querySelectorAll(".gotome");
-// allgotome.forEach(click(), function (){
 
-// });
 //tạo hịu ứng cho thanh add ảnh chạy bên phải
 document.addEventListener("DOMContentLoaded", function() {
     let list = document.querySelector('.colum-right-2 .slider-1 .list');
@@ -326,6 +323,11 @@ document.addEventListener("DOMContentLoaded", async function onload() {
     var cmt = document.querySelectorAll(".cmt-container");
     cmt.forEach(function(button) {
       button.style.display = "none";
+    });
+
+    var allgotome= document.querySelectorAll(".gotome");
+        allgotome.forEach(click(), function (){
+        window.location.href="/Cuu_SV/profile/thongtin.html";
     });
 
     ///comment
