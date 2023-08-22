@@ -10,14 +10,21 @@
     <title>Allumni</title>
 </head>
 
+<div class = "" id ="body">
 <section class = "header">
     <section class="logo"><a href="./trangchu.html"><img src="../image/3.png" alt="logo"/></a></section>
+    
     <section>
         <form class="search-form" action="" method="get" id="search-box">
             <button type = "button" class="search-btn" onclick="focusInput()"><i class="fa-solid fa-magnifying-glass"></i></button>
             <input class ="search-text" type="text" placeholder="tìm kiếm trên Allumni" >
         </form>
     </section>
+
+    <section class = "change-light">
+        <input type="checkbox" class="btn-change-light" id ="btn-change-light-id">
+    </section>
+    
     <section class = "choice">
         <button  onclick="openmenuheader(); toggleArrow();" class = "button-menu"><i id="chevron" class="fa-solid fa-chevron-down"></i></button>
             <ul class="menu-header">
@@ -30,6 +37,7 @@
                 <li>
                     <button type="button"><a href ="/DangNhap-DangKy/login.html"><i class=" fa-solid fa-arrow-right-from-bracket"></i><i class="fa-solid fa-chevron-right"></i><span>Đăng xuất</span></a></button>
                 </li>
+
             </ul>
     </section>
 </section>
@@ -40,7 +48,7 @@
             <li class = "gotome">
                 <button type="button " id="btn-profile">
                     <div class = "user">
-                        <div class = "user-avt"><img src="../Trangchu/lover.jpg"></div>
+                        <div class = "user-avt"><img src="./lover.jpg"></div>
                         <div class = "user-name "><span>Trí Minh</span></div>
                     </div>
                 </button>
@@ -113,11 +121,12 @@
             <!-- quang cao o day -->
         </div>
     </div> 
+    
 
     <div class="post-container" id="post-container">
         <div class="post" id="posting">
             <div class = "user">
-                <div class = "user-avt gotome"><img src="../Trangchu/lover.jpg"></div>
+                <div class = "user-avt gotome"><img src="./lover.jpg"></div>
                 <div class = "user-name gotome"><span>Trí Minh</span></div>
             </div>
             <div class = "post-form">
@@ -127,5 +136,6 @@
         </div>
             <!-- Hiển thị các bài đăng ở đây -->
     </div>
+</div>
 </div>
 </html>
