@@ -4,24 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="/Cuu_SV/Trangchu/trangchu.css">
-    <script src="/Cuu_SV/Trangchu/search.js"></script> 
+    <link rel="stylesheet" href="./trangchu.css">
+    <script src="./search.js"></script> 
     <title>Allumni</title>
 </head>
 
+<div class = "" id ="body">
 <section class = "header">
-    <section class="logo"><a href="/Cuu_SV/Trangchu/trangchu.html"><img src="/Cuu_SV/image/3.png" alt="logo"/></a></section>
+    <section class="logo"><a href="./trangchu.html"><img src="../image/3.png" alt="logo"/></a></section>
+    
     <section>
         <form class="search-form" action="" method="get" id="search-box">
             <button type = "button" class="search-btn" onclick="focusInput()"><i class="fa-solid fa-magnifying-glass"></i></button>
             <input class ="search-text" type="text" placeholder="tìm kiếm trên Allumni" >
         </form>
     </section>
+
+    <section class = "change-light">
+        <input type="checkbox" class="btn-change-light" id ="btn-change-light-id">
+    </section>
+    
     <section class = "choice">
         <button  onclick="openmenuheader(); toggleArrow();" class = "button-menu"><i id="chevron" class="fa-solid fa-chevron-down"></i></button>
             <ul class="menu-header">
                 <li>
-                    <button type="button" ><a href="/Cuu_SV/profile/thongtin.html"><i class="fa-solid fa-user"></i><i class="fa-solid fa-chevron-right"></i><span>Tôi</span></a></button>
+                    <button type="button" ><a href="../profile/thongtin.html"><i class="fa-solid fa-user"></i><i class="fa-solid fa-chevron-right"></i><span>Tôi</span></a></button>
                 </li>
                 <li>
                     <button type="button"><a href="/DangNhap-DangKy/change.html"><i class=" fa-solid fa-pen-to-square"></i><i class="fa-solid fa-chevron-right"></i><span>Đổi mật khẩu</span></a></button>
@@ -29,6 +36,7 @@
                 <li>
                     <button type="button"><a href ="/DangNhap-DangKy/login.html"><i class=" fa-solid fa-arrow-right-from-bracket"></i><i class="fa-solid fa-chevron-right"></i><span>Đăng xuất</span></a></button>
                 </li>
+
             </ul>
     </section>
 </section>
@@ -39,7 +47,7 @@
             <li class = "gotome">
                 <button type="button " id="btn-profile">
                     <div class = "user">
-                        <div class = "user-avt"><img src="/Cuu_SV/Trangchu/lover.jpg"></div>
+                        <div class = "user-avt"><img src="./lover.jpg"></div>
                         <div class = "user-name "><span>Trí Minh</span></div>
                     </div>
                 </button>
@@ -63,22 +71,22 @@
         <div class = "slider slider-1">
             <div class="list" onclick="openoualumni()">
                 <div class = "item">
-                    <a href="#" target="_blank"><img class="banner" id="banner-1" src="/Cuu_SV/image/sv1.1.jpg" alt="banner"></a>
+                    <a href="#" target="_blank"><img class="banner" id="banner-1" src="../image/sv1.1.jpg" alt="banner"></a>
                 </div>
                 <div class = "item">
-                    <a href="#" target="_blank"><img class="banner" id="banner-1" src="/Cuu_SV/image/sv1.2.jpg" alt="banner"></a>
+                    <a href="#" target="_blank"><img class="banner" id="banner-1" src="../image/sv1.2.jpg" alt="banner"></a>
                 </div>
                 <div class = "item">
-                    <a href="#" target="_blank"><img class="banner" id="banner-1" src="/Cuu_SV/image/sv1.3.jpg" alt="banner"></a>
+                    <a href="#" target="_blank"><img class="banner" id="banner-1" src="../image/sv1.3.jpg" alt="banner"></a>
                 </div>
                 <div class = "item">
-                    <a href="#" target="_blank"><img class="banner" id="banner-1" src="/Cuu_SV/image/sv1.4.jpg" alt="banner"></a>
+                    <a href="#" target="_blank"><img class="banner" id="banner-1" src="../image/sv1.4.jpg" alt="banner"></a>
                 </div>
                 <div class = "item">
-                    <a href="#" target="_blank" ><img class="banner" id="banner-1" src="/Cuu_SV/image/sv1.5.jpg" alt="banner"></a>
+                    <a href="#" target="_blank" ><img class="banner" id="banner-1" src="../image/sv1.5.jpg" alt="banner"></a>
                 </div>
                 <div class = "item">
-                    <a href="#" target="_blank"><img class="banner" id="banner-1" src="/Cuu_SV/image/sv1.6.jpg" alt="banner"></a>
+                    <a href="#" target="_blank"><img class="banner" id="banner-1" src="../image/sv1.6.jpg" alt="banner"></a>
                 </div>
             </div>
         </div>
@@ -86,22 +94,22 @@
         <div class = "slider slider-2">
             <div class="list">
                 <div class = "item">
-                    <a href="#" target="_blank"><img class="banner" id="banner-1" src="/Cuu_SV/image/dai-hoc-thanh-hoa-8-1.jpg" alt="banner"></a>
+                    <a href="#" target="_blank"><img class="banner" id="banner-1" src="../image/dai-hoc-thanh-hoa-8-1.jpg" alt="banner"></a>
                 </div>
                 <div class = "item">
-                    <a href="#" target="_blank"><img class="banner" id="banner-1" src="/Cuu_SV/image/dai-hoc-thanh-hoa-8-2.jpg" alt="banner"></a>
+                    <a href="#" target="_blank"><img class="banner" id="banner-1" src="../image/dai-hoc-thanh-hoa-8-2.jpg" alt="banner"></a>
                 </div>
                 <div class = "item">
-                    <a href="#" target="_blank"><img class="banner" id="banner-1" src="/Cuu_SV/image/dai-hoc-thanh-hoa-8-3.jpg" alt="banner"></a>
+                    <a href="#" target="_blank"><img class="banner" id="banner-1" src="../image/dai-hoc-thanh-hoa-8-3.jpg" alt="banner"></a>
                 </div>
                 <div class = "item">
-                    <a href="#" target="_blank"><img class="banner" id="banner-1" src="/Cuu_SV/image/dai-hoc-thanh-hoa-8-4.jpg" alt="banner"></a>
+                    <a href="#" target="_blank"><img class="banner" id="banner-1" src="../image/dai-hoc-thanh-hoa-8-4.jpg" alt="banner"></a>
                 </div>
                 <div class = "item">
-                    <a href="#" target="_blank"><img class="banner" id="banner-1" src="/Cuu_SV/image/dai-hoc-thanh-hoa-8-5.jpg" alt="banner"></a>
+                    <a href="#" target="_blank"><img class="banner" id="banner-1" src="../image/dai-hoc-thanh-hoa-8-5.jpg" alt="banner"></a>
                 </div>
                 <div class = "item">
-                    <a href="#" target="_blank"><img class="banner" id="banner-1" src="/Cuu_SV/image/dai-hoc-thanh-hoa-8-6.jpg" alt="banner"></a>
+                    <a href="#" target="_blank"><img class="banner" id="banner-1" src="../image/dai-hoc-thanh-hoa-8-6.jpg" alt="banner"></a>
                 </div>
             </div>
         </div>
@@ -112,11 +120,12 @@
             <!-- quang cao o day -->
         </div>
     </div> 
+    
 
     <div class="post-container" id="post-container">
         <div class="post" id="posting">
             <div class = "user">
-                <div class = "user-avt gotome"><img src="/Cuu_SV/Trangchu/lover.jpg"></div>
+                <div class = "user-avt gotome"><img src="./lover.jpg"></div>
                 <div class = "user-name gotome"><span>Trí Minh</span></div>
             </div>
             <div class = "post-form">
@@ -126,5 +135,6 @@
         </div>
             <!-- Hiển thị các bài đăng ở đây -->
     </div>
+</div>
 </div>
 </html>

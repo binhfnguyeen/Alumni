@@ -130,7 +130,7 @@ function loadadds(data) {
             <div class ="adds">
                 <a href="${c.diachi}" target="_blank">
                     <span>${c.tieude}</span>
-                    <img class ="img-add" src="/Cuu_SV/image/adds/${c.anh}"> 
+                    <img class ="img-add" src="../image/adds/${c.anh}"> 
                 </a>
             </div>
             `;
@@ -150,7 +150,7 @@ function loadbusiness(data) {
         h +=  `
         <div class ="adds">
             <a href="${c.diachi}" target="_blank">
-                <img class ="img-add" src="/Cuu_SV/business_img/${c.anh}.jpg"> 
+                <img class ="img-add" src="../business_img/${c.anh}.jpg"> 
             </a>
         </div>`
         ;
@@ -175,7 +175,7 @@ function commenting(button){
         //nọi dung cmt
         a += 
        `<div class="comment">
-        <div class = "user-avt gotome"><img src="/Cuu_SV/Trangchu/lover.jpg" alt="adds"></div>
+        <div class = "user-avt gotome"><img src="./lover.jpg" alt="adds"></div>
         <div class = "cmt-info">
                 <div class = "cmt-name gotome"><span>Trí Minh</span></div>   
                 <div class="cmt-value">
@@ -187,6 +187,9 @@ function commenting(button){
         cmtcontainer.insertAdjacentHTML("beforeend",a);
     }
 }
+
+// hàm goto
+
 
 function gotowork(){
     window.open("/Cuu_SV/business/business.html", "_blank")
@@ -252,7 +255,7 @@ function loadpost(data) {
             `</div>
             <div class ="cmt-active">
                 <div class="cmt-enter">
-                    <div class = "user-avt"><img src="/Cuu_SV/Trangchu/lover.jpg" alt="adds"></div>
+                    <div class = "user-avt"><img src="./lover.jpg" alt="adds"></div>
                     <div class = "write-cmt ">
                         <textarea id="cmt-info" class ="cmt-info" type="text" placeholder="Nhập bình luận của bạn..."></textarea>
                         <div class="cmt-options">
@@ -294,13 +297,7 @@ document.addEventListener("DOMContentLoaded", async function onload() {
         cmtwrite.forEach(function(button) {
         button.style.display = "none";
     });
-// hàm goto
-    var allgotome = document.querySelectorAll(".gotome");
-    allgotome.forEach( function (button){
-        button.addEventListener("click", function(){
-        window.location.href = "/Cuu_SV/profile/thongtin.html";
-        });
-    });
+
 ////
     var header_btn = document.querySelector(".menu-header");
     header_btn.style.display = "none";
@@ -342,9 +339,11 @@ document.addEventListener("DOMContentLoaded", async function onload() {
       button.style.display = "none";
     });
 
-    var allgotome= document.querySelectorAll(".gotome");
-        allgotome.forEach(click(), function (){
-            window.open("/Cuu_SV/profile/thongtin.html");
+    var allgotome = document.querySelectorAll(".gotome");
+    allgotome.forEach( function (button){
+        button.addEventListener("click", function(){
+        window.open( "../profile/thongtin.html");
+        });
     });
 
     ///comment
@@ -361,8 +360,12 @@ document.addEventListener("DOMContentLoaded", async function onload() {
         });
     }); 
     
+    var checklight = document.getElementById("btn-change-light-id");
+    checklight.addEventListener("change", function(){
+        var a = document.getElementById("body");
+        a.classList.toggle("dark");
+    });
     ///post bài viết
-
     var postbtn = document.getElementById("post-btn");
     let result = document.getElementById("posting");
     postbtn.addEventListener("click", function(){
@@ -375,7 +378,7 @@ document.addEventListener("DOMContentLoaded", async function onload() {
         a+= `
         <div class ="post">
         <div class = "user">
-            <div class = "user-avt gotome"><img src="/Cuu_SV/Trangchu/lover.jpg" alt="adds"></div>
+            <div class = "user-avt gotome"><img src="./lover.jpg" alt="adds"></div>
             <div class = "name-time">
                 <div class = "user-name gotome" ><span>Minh Trí</span></div>
                 <div class= " post-time"><span>1p trước</span></div>
@@ -402,7 +405,7 @@ document.addEventListener("DOMContentLoaded", async function onload() {
         </div>
         <div class ="cmt-active">
             <div class="cmt-enter">
-                <div class = "user-avt gotome"><img src="/Cuu_SV/Trangchu/lover.jpg" alt="adds"></div>
+                <div class = "user-avt gotome"><img src="./lover.jpg" alt="adds"></div>
                 <div class = "write-cmt ">
                     <textarea id="cmt-info" class ="cmt-info" type="text" placeholder="Nhập bình luận của bạn..."></textarea>
                     <div class="cmt-options">
