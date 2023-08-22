@@ -1,9 +1,8 @@
+
 function focusInput() {
     var input = document.querySelector(".search-text");
     input.focus(); // Tập trung vào ô nhập liệu khi nút được nhấp
 }
-
-
 
 function openmenuheader() {
     var menu = document.querySelector(".menu-header");
@@ -72,6 +71,12 @@ function cmtentershow(button) {
     }
 }
 
+function changcolor (){
+    var header = document.getElementById("header");
+    var header_search = header.querySelector("search-form");
+    var header_
+}
+
 
 //tạo hịu ứng cho thanh add ảnh chạy bên phải
 document.addEventListener("DOMContentLoaded", function() {
@@ -113,6 +118,107 @@ document.addEventListener("DOMContentLoaded", function() {
 
     setInterval(reloadSlider1, 1800);
 });
+
+function darkmode(){
+    var a = document.getElementById("body");
+    var postcolor = "rgb(33, 33, 33)";
+    var colorword = "rgb(255, 236, 255)";
+    var bgcolor   = "rgb(60,60,60)";
+    var itemcolor = "rgb(255, 255, 255, 0.1)";
+    var boxShadow = "1px 1px 5px rgb(1, 1, 1,0.9)";
+    var header = document.getElementById("header");
+    var btnheader = document.querySelector(".button-menu");
+    var posts = document.querySelectorAll(".post");
+    var textarea = document.querySelectorAll("textarea");
+    var posttime = document.querySelectorAll(".post-time");
+    var divs = document.querySelectorAll("div");
+    var spans = document.querySelectorAll("span");
+    var as = document.querySelectorAll("a");
+    var buttons = document.querySelectorAll("button");
+    var bntlikecmt = document.querySelectorAll(".btn-cmt-like");
+    var menuheader = document.querySelector(".menu-header");
+    if(a.classList.contains("dark"))
+        {
+            //remove
+            a.classList.remove("dark");
+            document.body.style.backgroundColor = "white";
+
+            header.classList.remove("-darkmode")
+            btnheader.classList.remove("-darkmode");
+            posts.forEach(function(post) {
+                post.classList.remove("-darkmode");
+            });
+            textarea.forEach(function(postcontent){
+                postcontent.classList.remove("-darkmode");
+            });
+            posttime.forEach(function(post) {
+                post.classList.remove("-darkmode");
+            });
+            divs.forEach(function(div) {
+                div.classList.remove("-darkmode");
+            });
+            spans.forEach(function(span){
+                span.classList.remove("-darkmode");
+            });
+            as.forEach(function(a){
+                a.classList.remove("-darkmode");
+            });
+            buttons.forEach(function(button) {
+                button.style.color = "black";
+                if(button.classList.contains("btn-like") || button.classList.contains("btn-comment")){
+                    button.style.background = "";
+                }
+            });
+            menuheader.classList.remove("-darkmode");
+
+        }
+    else
+       {
+            a.classList.add("dark");
+            document.body.style.backgroundColor = "black";
+            // header.style.backgroundColor = postcolor;
+            header.classList.add("-darkmode");
+            // header.style.boxShadow = boxShadow;
+            // btnheader.style.backgroundColor = bgcolor; 
+            btnheader.classList.add("-darkmode");
+            posts.forEach(function(post) {
+                post.classList.add("-darkmode");
+            });
+            textarea.forEach(function(postcontent){
+                postcontent.classList.add("-darkmode");
+            });
+            posttime.forEach(function(post) {
+                post.classList.add("-darkmode");
+            });
+            divs.forEach(function(div) {
+                div.classList.add("-darkmode");
+            });
+            spans.forEach(function(span){
+                span.classList.add("-darkmode");
+            });
+            as.forEach(function(a){
+                a.classList.add("-darkmode");
+            });
+            buttons.forEach(function(button) {
+                button.style.color = colorword;
+                if(button.classList.contains("btn-like") || button.classList.contains("btn-comment")){
+                    button.style.background = itemcolor;
+                }
+            });
+            bntlikecmt.forEach(function(btnlike){
+                btnlike.classList.add("-darkmode");
+            });
+            menuheader.classList.add("-darkmode");
+
+       }
+    }; 
+
+document.addEventListener("DOMContentLoaded", function (){
+    var checklight = document.getElementById("btn-change-light-id");
+    checklight.addEventListener("click", function(){
+        darkmode();
+    });
+}); 
 
 
 // Hàm load dữ liệu từ file JSON
@@ -162,6 +268,8 @@ function loadbusiness(data) {
     }
 }
 
+
+
 function commenting(button){
     let place = button.closest(".cmt-active");
     let place2 = place.querySelector(".cmt-info");
@@ -173,6 +281,22 @@ function commenting(button){
         let text = formattedValue;
         let a = "";
         //nọi dung cmt
+        var c = document.getElementById("body");
+        if(c.classList.contains("dark")){
+            a +=    `<div class="comment -darkmode">
+            <div class="user-avt gotome -darkmode"><img src="./lover.jpg" alt="adds"></div>
+            <div class="cmt-info -darkmode">
+                    <div class="cmt-name -darkmode"><span class="-darkmode">Trí Minh</span></div>   
+                    <div class="cmt-value -darkmode">
+                        ${text}
+                    </div>
+                    <button class="btn-cmt-like -darkmode" style="color: rgb(255, 236, 255);"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            </div>`
+        cmtcontainer.insertAdjacentHTML("beforeend",a);
+
+        }
+        else {
         a += 
        `<div class="comment">
         <div class = "user-avt gotome"><img src="./lover.jpg" alt="adds"></div>
@@ -187,6 +311,7 @@ function commenting(button){
         cmtcontainer.insertAdjacentHTML("beforeend",a);
     }
 }
+}
 
 // hàm goto
 
@@ -198,6 +323,9 @@ function gotowork(){
 function openoualumni(){
     window.open("https://www.bing.com/ck/a?!&&p=c4ff0f276b36a3eaJmltdHM9MTY5MjU3NjAwMCZpZ3VpZD0yMWEyMmRkNC1lMTU1LTZlOTItMDY5MS0zZmE1ZTAyYTZmY2EmaW5zaWQ9NTE4MQ&ptn=3&hsh=3&fclid=21a22dd4-e155-6e92-0691-3fa5e02a6fca&psq=alumi+ou&u=a1aHR0cDovL2FsdW1uaS5vdS5lZHUudm4v&ntb=1", "_blank")
 }
+
+
+
 // Hàm load post
 function loadpost(data) {
     // Implement loadpost here
@@ -207,7 +335,7 @@ function loadpost(data) {
             let postcmt = parseInt(c.cmt_num);
             h += 
             `
-            <div class ="post">
+            <div class ="post"> 
             <div class = "user">
                 <div class = "user-avt"><img src="${c.avt}" alt="adds"></div>
                 <div class = "name-time">
@@ -279,12 +407,14 @@ function loadpost(data) {
 }
 
 
+
+
 // Đợi DOMContentLoaded trước khi thực thi
 document.addEventListener("DOMContentLoaded", async function onload() {
     // Load data from JSON files
-    const addsData = await loadDataFromJSON("/Cuu_SV/Trangchu/adds.json");
-    const businessData = await loadDataFromJSON("/Cuu_SV/Trangchu/business.json");
-    const postData = await loadDataFromJSON("/Cuu_SV/Trangchu/post.json");
+    const addsData = await loadDataFromJSON("../Trangchu/adds.json");
+    const businessData = await loadDataFromJSON("../Trangchu/business.json");
+    const postData = await loadDataFromJSON("../Trangchu/post.json");
 
     // Call your functions after data is loaded
     loadadds(addsData);
@@ -339,6 +469,7 @@ document.addEventListener("DOMContentLoaded", async function onload() {
       button.style.display = "none";
     });
 
+    //link to trang ca nhan
     var allgotome = document.querySelectorAll(".gotome");
     allgotome.forEach( function (button){
         button.addEventListener("click", function(){
@@ -359,12 +490,8 @@ document.addEventListener("DOMContentLoaded", async function onload() {
             });
         });
     }); 
-    
-    var checklight = document.getElementById("btn-change-light-id");
-    checklight.addEventListener("change", function(){
-        var a = document.getElementById("body");
-        a.classList.toggle("dark");
-    });
+
+
     ///post bài viết
     var postbtn = document.getElementById("post-btn");
     let result = document.getElementById("posting");
@@ -375,7 +502,58 @@ document.addEventListener("DOMContentLoaded", async function onload() {
         if(text != ""){
         let a ="";
         //cộng thêm bài póst vào
-        a+= `
+        var c = document.getElementById("body");
+        if(c.classList.contains("dark")){
+            a +=    `<div class="post -darkmode">
+            <div class="user -darkmode">
+                <div class="user-avt gotome -darkmode"><img src="./lover.jpg" alt="adds"></div>
+                <div class="name-time -darkmode">
+                    <div class="user-name gotome -darkmode"><span class="-darkmode">Minh Trí</span></div>
+                    <div class="post-time -darkmode"><span class="-darkmode">1p trước</span></div>
+                </div>
+            </div>
+            
+            <div class="post-value -darkmode">
+                <p class="paragrap-post"> 
+                    ${text}
+                </p>
+            </div>
+            
+            <div class="interact-val -darkmode">
+                <div class="-darkmode"> 0 thích</div> 
+                <div class="-darkmode"> 0 bình luận</div>
+            </div>
+            
+            <div class="btn-interact -darkmode">
+                <button type="button" class="btn-like" style="color: rgb(255, 236, 255); background: rgba(255, 255, 255, 0.1);"><i class="fa-regular fa-heart"></i><span class="-darkmode">Yêu thích</span></button>
+                <button type="button" class="btn-comment" style="color: rgb(255, 236, 255); background: rgba(255, 255, 255, 0.1);"><i class="fa-regular fa-comment"></i><span class="-darkmode">Bình luận</span></button>
+            </div>
+            
+            <div class="cmt-container -darkmode" id="cmt-container" style="display: none;">
+            </div>
+            <div class="cmt-active -darkmode" style="display: none;">
+                <div class="cmt-enter -darkmode">
+                    <div class="user-avt gotome -darkmode"><img src="./lover.jpg" alt="adds"></div>
+                    <div class="write-cmt -darkmode">
+                        <textarea id="cmt-info" class="cmt-info -darkmode" type="text" placeholder="Nhập bình luận của bạn..."></textarea>
+                        <div class="cmt-options -darkmode">
+                            <ul>
+                                <li><i class="fa-regular fa-image"></i></li>
+                                <li><i class="fa-regular fa-face-smile"></i></li>
+                                <li class="up-cmt"><i class="fa-solid fa-paper-plane"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            </div>`
+        result.insertAdjacentHTML("afterend", a);
+        onload();
+        }
+        else {
+        a+= 
+        `
         <div class ="post">
         <div class = "user">
             <div class = "user-avt gotome"><img src="./lover.jpg" alt="adds"></div>
@@ -423,7 +601,7 @@ document.addEventListener("DOMContentLoaded", async function onload() {
         result.insertAdjacentHTML("afterend", a);
         onload();
     }
+    }
     });
-
 });
 
