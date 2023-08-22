@@ -1,47 +1,47 @@
 {
     "slider-1":[
         {
-            "url": "/Cựu SV/image/sv1.1.jpg"
+            "url": "../image/sv1.1.jpg"
         },
         {
-            "url": "/Cựu SV/image/sv1.2.jpg"
+            "url": "../image/sv1.2.jpg"
 
         },
         {
-            "url": "/Cựu SV/image/sv1.3.jpg"
+            "url": "../image/sv1.3.jpg"
 
         },        
         {
-            "url": "/Cựu SV/image/sv1.4.jpg"
+            "url": "../image/sv1.4.jpg"
         },
         {
-            "url": "/Cựu SV/image/sv1.5.jpg"
+            "url": "../image/sv1.5.jpg"
 
         },
         {
-            "url": "/Cựu SV/image/sv1.6.jpg"
+            "url": "../image/sv1.6.jpg"
 
         }
     ],
     "slider2":[
         {   
-            "url": "/Cựu SV/image/dai-hoc-thanh-hoa-8-1.jpg"
+            "url": "../image/dai-hoc-thanh-hoa-8-1.jpg"
         },
         {   
-            "url": "/Cựu SV/image/dai-hoc-thanh-hoa-8-2.jpg"
+            "url": "../image/dai-hoc-thanh-hoa-8-2.jpg"
         },
         {   
-            "url": "/Cựu SV/image/dai-hoc-thanh-hoa-8-3.jpg"
+            "url": "../image/dai-hoc-thanh-hoa-8-3.jpg"
         },
         {   
 
-            "url": "/Cựu SV/image/dai-hoc-thanh-hoa-8-4.jpg"
+            "url": "../image/dai-hoc-thanh-hoa-8-4.jpg"
         },
         {   
-            "url": "/Cựu SV/image/dai-hoc-thanh-hoa-8-5.jpg"
+            "url": "../image/dai-hoc-thanh-hoa-8-5.jpg"
         },
         {   
-            "url": "/Cựu SV/image/dai-hoc-thanh-hoa-8-6.jpg"
+            "url": "../image/dai-hoc-thanh-hoa-8-6.jpg"
         }
     ]
 }
