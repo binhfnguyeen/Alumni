@@ -1,7 +1,7 @@
 //Ads changes
 var index=0;
 changeImg = function(){
-    var imgs = ["/Cuu_SV/profile/img/sv1.1.jpg", "/Cuu_SV/profile/img/sv1.2.jpg","/Cuu_SV/profile/img/sv1.3.jpg","/Cuu_SV/profile/img/sv1.4.jpg","/Cuu_SV/profile/img/sv1.5.jpg", "/Cuu_SV/profile/img/sv1.6.jpg"];
+    var imgs = ["./img/sv1.1.jpg", "./img/sv1.2.jpg","./img/sv1.3.jpg","./img/sv1.4.jpg","./img/sv1.5.jpg", "./img/sv1.6.jpg"];
     document.getElementById("img").src = imgs[index];
     index++;
     if(index==imgs.length){

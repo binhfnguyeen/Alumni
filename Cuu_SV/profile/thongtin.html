@@ -5,18 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="/Cuu_SV/profile/thongtin.css" />
-    <link rel="shortcut icon" href="/Cuu_SV/profile/img/logo.png">
-    <script src="/Cuu_SV/Trangchu/search.js"></script>
-    <script src="/Cuu_SV/profile/chat.js"></script>
-    <script src="/Cuu_SV/profile/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <link rel="stylesheet" href="./thongtin.css" />
+    <link rel="shortcut icon" href="./img/logo.png">
+    <script src="../Trangchu/search.js"></script>
+    <script src="./chat.js"></script>
     <title>Allumni</title>
 </head>
 
 <body>
     <!-- Thanh tìm kiếm -->
     <section class="header">
-        <section class="logo gotome"><a href="/Cuu_SV/Trangchu/trangchu.html"><img src="/Cuu_SV/image/3.png" alt="logo" /></a></section>
+        <section class="logo gotome"><a href="../Trangchu/trangchu.html"><img src="../image/3.png" alt="logo" /></a></section>
         <section>
             <form class="search-form" action="/tim-kiem" method="get" id="search-box">
                 <button type="button" class="search-btn" onclick="focusInput()"><i
@@ -28,13 +27,13 @@
             <button onclick="openmenuheader(); toggleArrow();" class = "button-menu"><i id="chevron" class="fa-solid fa-chevron-down"></i></button>
                 <ul class="menu-header">
                     <li>
-                        <button type="button" onclick="" class = ""><a href="/Cuu_SV/profile/thongtin.html"><i class="fa-solid fa-user"></i><i class="fa-solid fa-chevron-right"></i><span>Tôi</span></a></button>
+                        <button type="button" onclick="" class = ""><a href="../profile/thongtin.html"><i class="fa-solid fa-user"></i><i class="fa-solid fa-chevron-right"></i><span>Tôi</span></a></button>
                     </li>
                     <li>
-                        <button type="button" onclick="" class = ""><a href="/DangNhap-DangKy/change.html"><i class=" fa-solid fa-pen-to-square"></i><i class="fa-solid fa-chevron-right"></i><span>Đổi mật khẩu</span></a></button>
+                        <button type="button" onclick="" class = ""><a href="DangNhap-DangKy/change.html"><i class=" fa-solid fa-pen-to-square"></i><i class="fa-solid fa-chevron-right"></i><span>Đổi mật khẩu</span></a></button>
                     </li>
                     <li>
-                        <button type="button" onclick="" class = ""><a href ="/DangNhap-DangKy/login.html"><i class=" fa-solid fa-arrow-right-from-bracket"></i><i class="fa-solid fa-chevron-right"></i><span>Đăng xuất</span></a></button>
+                        <button type="button" onclick="" class = ""><a href ="DangNhap-DangKy/login.html"><i class=" fa-solid fa-arrow-right-from-bracket"></i><i class="fa-solid fa-chevron-right"></i><span>Đăng xuất</span></a></button>
                     </li>
                 </ul>
         </section>
@@ -43,7 +42,7 @@
     <main class="body">
         <div class="column col1">
                 <div class="ads">
-                    <img id="img" src="/Cuu_SV/profile/img/sv1.1.jpg" alt="sv">
+                    <img id="img" src="./img/sv1.1.jpg" alt="sv">
                     <p>College Graduation Ceremony</p>
                 </div>
         </div>
@@ -53,7 +52,7 @@
                 <table class="form-info">
                     <td class="avt-info">
                         <div class="avt">
-                            <img class="avatar" src="/Cuu_SV/profile/img/lover.jpg" alt="avatar">
+                            <img class="avatar" src="./img/lover.jpg" alt="avatar">
                         </div>
                         <div class="edit-avt">
                             <input type="file" id="avt-upload" accept="image/*" style="display: none;">
@@ -108,27 +107,27 @@
                 <div class="album">
                     <div class="big-photo">
                         <input type="file" id="album-upload1" accept="image/*" style="display: none;">
-                        <img id="1" src="/Cuu_SV/profile/img/no-image.png" alt="img" class="img2" onclick="changeAlbumImage('1')">
+                        <img id="1" src="./img/no-image.png" alt="img" class="img2" onclick="changeAlbumImage('1')">
                     </div>
                     <div class="mini-album">
                         <div class="mini-row">
                             <div class="mini-photo">
                                 <input type="file" id="album-upload2" accept="image/*" style="display: none;">
-                                <img id="2" src="/Cuu_SV/profile/img/no-image.png" alt="img" class="img2"  onclick="changeAlbumImage('2')">
+                                <img id="2" src="./img/no-image.png" alt="img" class="img2"  onclick="changeAlbumImage('2')">
                             </div>
                             <div class="mini-photo">
                                 <input type="file" id="album-upload3" accept="image/*" style="display: none;">
-                                <img id="3" src="/Cuu_SV/profile/img/no-image.png" alt="img" class="img2"  onclick="changeAlbumImage('3')">
+                                <img id="3" src="./img/no-image.png" alt="img" class="img2"  onclick="changeAlbumImage('3')">
                             </div>
                         </div>
                         <div class="mini-row">
                             <div class="mini-photo">
                                 <input type="file" id="album-upload4" accept="image/*" style="display: none;">
-                                <img id="4" src="/Cuu_SV/profile/img/no-image.png" alt="img" class="img2"  onclick="changeAlbumImage('4')"> 
+                                <img id="4" src="./img/no-image.png" alt="img" class="img2"  onclick="changeAlbumImage('4')"> 
                             </div>
                             <div class="mini-photo">
                                 <input type="file" id="album-upload5" accept="image/*" style="display: none;">
-                                <img id="5" src="/Cuu_SV/profile/img/no-image.png" alt="img" class="img2"  onclick="changeAlbumImage('5')">
+                                <img id="5" src="./img/no-image.png" alt="img" class="img2"  onclick="changeAlbumImage('5')">
                             </div>
                         </div>
                     </div>
@@ -137,7 +136,7 @@
             <div class="footer"><p class="move-effect">Lưu trữ hình ảnh <i class="fa-regular fa-image"></i>: Những kĩ niệm khó quên của bạn... </p></div>
         </div>
         <div class="column col3">
-            <h5><p>Danh sách bạn bè</p><img src="/Cuu_SV/profile/img/f-lists.png" alt="friends"></h5>
+            <h5><p>Danh sách bạn bè</p><img src="./img/f-lists.png" alt="friends"></h5>
             <div class="friends-list">
                 <ul class="friends" id="friends">
                     
@@ -153,8 +152,8 @@
     <footer class="bottom">
         <div title="Thông tin"><a href="#"><i class="fa-solid fa-newspaper"></i></a></div>
         <div title="Bạn bè"><a href="#"><i class="fa-solid fa-user-group"></i></a></div>
-        <div title="Trang chủ"><a href="/Cuu_SV/Trangchu/trangchu.html"><i class="fa-solid fa-house"></i></a></div>
-        <div title="Tìm việc"><a href="/Cuu_SV/business/business.html"><i class="fa-solid fa-business-time"></i></a></div>
+        <div title="Trang chủ"><a href="../Trangchu/trangchu.html"><i class="fa-solid fa-house"></i></a></div>
+        <div title="Tìm việc"><a href="../business/business.html"><i class="fa-solid fa-business-time"></i></a></div>
         <div title="Cài đặt"><a href="#"><i class="fa-solid fa-gear"></i></a></div>
     </footer>
 </body>
