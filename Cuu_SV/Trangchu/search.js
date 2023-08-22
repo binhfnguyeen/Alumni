@@ -121,11 +121,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function darkmode(){
     var a = document.getElementById("body");
-    var postcolor = "rgb(33, 33, 33)";
     var colorword = "rgb(255, 236, 255)";
-    var bgcolor   = "rgb(60,60,60)";
     var itemcolor = "rgb(255, 255, 255, 0.1)";
-    var boxShadow = "1px 1px 5px rgb(1, 1, 1,0.9)";
     var header = document.getElementById("header");
     var btnheader = document.querySelector(".button-menu");
     var posts = document.querySelectorAll(".post");
@@ -317,7 +314,7 @@ function commenting(button){
 
 
 function gotowork(){
-    window.open("/Cuu_SV/business/business.html", "_blank")
+    window.open("../business/business.html", "_blank")
 }
 
 function openoualumni(){
@@ -329,6 +326,7 @@ function openoualumni(){
 // Hàm load post
 function loadpost(data) {
     // Implement loadpost here
+
     let h = "";
         for (let c of data){
             let postlike = parseInt(c.like_num);
@@ -337,7 +335,7 @@ function loadpost(data) {
             `
             <div class ="post"> 
             <div class = "user">
-                <div class = "user-avt"><img src="${c.avt}" alt="adds"></div>
+                <div class = "user-avt"><img src="${c.avt}" alt="avt"></div>
                 <div class = "name-time">
                     <div class = "user-name"><span>${c.name}</span></div>
                     <div class= " post-time"><span>${c.time}</span></div>
@@ -412,9 +410,9 @@ function loadpost(data) {
 // Đợi DOMContentLoaded trước khi thực thi
 document.addEventListener("DOMContentLoaded", async function onload() {
     // Load data from JSON files
-    const addsData = await loadDataFromJSON("../Trangchu/adds.json");
+    const addsData = await loadDataFromJSON("./adds.json");
     const businessData = await loadDataFromJSON("../Trangchu/business.json");
-    const postData = await loadDataFromJSON("../Trangchu/post.json");
+    const postData = await loadDataFromJSON("./post.json");
 
     // Call your functions after data is loaded
     loadadds(addsData);
@@ -553,8 +551,7 @@ document.addEventListener("DOMContentLoaded", async function onload() {
         }
         else {
         a+= 
-        `
-        <div class ="post">
+        `<div class ="post">
         <div class = "user">
             <div class = "user-avt gotome"><img src="./lover.jpg" alt="adds"></div>
             <div class = "name-time">
@@ -597,7 +594,7 @@ document.addEventListener("DOMContentLoaded", async function onload() {
             </div>
         </div>
 
-    </div>`;
+        </div>`;
         result.insertAdjacentHTML("afterend", a);
         onload();
     }

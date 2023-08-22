@@ -28,10 +28,12 @@ body {
 
 div.-darkmode {
     color: white;  
+    transition: var(--transition-effect2);
 }
 
 span.-darkmode {
     color: white;
+    transition: var(--transition-effect2);
 }
 
 .button-menu.-darkmode {
@@ -55,7 +57,7 @@ span.-darkmode {
 }   
 
 textarea.-darkmode{
-    background-color: #111;
+    background-color: rgb(255, 255, 255, 0.1);
     color: white !important; 
 }
 #post-content.-darkmode {
@@ -95,7 +97,7 @@ textarea {
     border-radius: 10px;
     font-size: medium;
     font-family: "Arial", sans-serif;
-    transition: var(--transition-effect);
+    transition: var(--transition-effect2);
 }
 
 
@@ -181,6 +183,7 @@ section.choice .menu-header{
     border-radius: 10px;
     display: none;
     width: 200px;
+    transition: var(--transition-effect2);
 }
 
 section.choice .menu-header > li {
@@ -469,7 +472,7 @@ button#btn-profile:hover{
     border-radius: 10px;
 }
 
-/* 
+
 @media screen and (max-width: 1380px) {
     .colum-right {
         display: none;
@@ -483,7 +486,7 @@ button#btn-profile:hover{
     .colum-right-2{
         display: none;
     }
-} */
+}
 
 /* edit avt + teen */
 
