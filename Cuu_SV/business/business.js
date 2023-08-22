@@ -1,6 +1,6 @@
 var index=0;
 changeImg = function(){
-    var imgs = ["./img/1.jpg", "./img/2.jpg","./img/3.jpg","./img/4.jpg"];
+    var imgs = ["../business/img/1.jpg", "../business/img/2.jpg","../business/img/3.jpg","../business/img/4.jpg"];
     document.getElementById("img").src = imgs[index];
     index++;
     if(index==imgs.length){
@@ -10,9 +10,9 @@ changeImg = function(){
 setInterval(changeImg, 3000);
 //Ads thay doi
 var i = 0;
-var imgs1 = ["./img/d2.jpg", "./img/d1.jpg"];
-var imgs2 = ["./img/d3.jpg", "./img/d4.jpg"];
-var imgs3 = ["./img/d5.jpg", "./img/d6.jpg"];
+var imgs1 = ["../business/img/d2.jpg", "../business/img/d1.jpg"];
+var imgs2 = ["../business/img/d3.jpg", "../business/img/d4.jpg"];
+var imgs3 = ["../business/img/d5.jpg", "../business/img/d6.jpg"];
 var img1 = document.getElementById("i1");
 var img2 = document.getElementById("i2");
 var img3 = document.getElementById("i3");
