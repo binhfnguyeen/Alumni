@@ -9,7 +9,7 @@ function login() {
 
             if (user) {
                 alert("Đăng nhập thành công!");
-                window.location.href = "/Cuu_SV/Trangchu/trangchu.html";
+                window.location.href = "../Cuu_SV/Trangchu/trangchu.html";
                 return false;
             } else {
                 alert("Tên đăng nhập hoặc mật khẩu không đúng. Vui lòng thử lại.");
